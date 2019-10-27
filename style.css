@@ -197,7 +197,9 @@ p {
 	text-align:justify;
 }
 h1 {
+	font-size:2em;
 	font-family:'BBTreeCR';
+	color:rgba(255,255,255,.7);
 	text-align:center;
 }
 
