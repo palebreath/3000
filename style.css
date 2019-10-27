@@ -23,7 +23,12 @@
     font-style: normal;
     font-weight: bold;
 }
-
+@font-face { 
+	font-family: 'BBTreeCR';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeCR.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 html { cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto }
 a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto; }
 p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
@@ -194,6 +199,11 @@ p {
   	max-width:700px;
 	margin:0.5em auto;
 	text-align:justify;
+}
+h1 {
+	font-family:'BBTreeCR';
+	text-align:center;
+	height:70vh;
 }
 
 #s1, #h1, #s2 {
