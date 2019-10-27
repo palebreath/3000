@@ -68,11 +68,9 @@ html, body {
           transform: translateY(15vh);
 }
 .background:nth-child(2) {
-  background-image: url('bg.jpg');
   background-position: center center;
 }
 .background:nth-child(3) {
-  background-image: url('bg.jpg');
   background-position: bottom center;
 }
 
@@ -93,10 +91,8 @@ html, body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  text-align: center;
   flex-flow: column nowrap;
   color: #fff;
-  font-family: Montserrat;
   text-transform: uppercase;
   -webkit-transform: translateY(40vh);
           transform: translateY(40vh);
