@@ -5,13 +5,13 @@
 @import url(https://fonts.googleapis.com/css?family=Caesar+Dressing);
 @import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
 
-html { cursor: url(http://rann.dothome.co.kr/yy/css/yh.ani), url(http://rann.dothome.co.kr/yy/css/yh.gif), auto !important }
-a, a:-webkit-any-link, a *, i, button { cursor: url(http://rann.dothome.co.kr/yy/css/yh_a.ani), url(http://rann.dothome.co.kr/yy/css/yh_a_.gif), auto !important; }
-p, span, textarea, input[type=text] { cursor: url(http://rann.dothome.co.kr/yy/css/yh_text.ani), url(http://rann.dothome.co.kr/yy/css/yh_text.gif), auto !important; }
-
+html { cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important }
+a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important; }
+p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto !important; }
 body {
 	margin:0;
-	background-size:cover;
+	background-image:url('bg.jpg');
+	background-size:contain;
 	font-family:'noto sans kr', 'Spoqa Han Sans', 'malgun gothic', dotum;
 	font-size:15px;
 	line-height:2.2;
@@ -20,23 +20,8 @@ body {
 a	{ color:#999; text-decoration: none }
 
 #bgm	{ position:absolute; left:calc(50% - 120px); top:0; width:240px; }
-#bgm i	{ 
-	position: absolute;
-	left: calc(50% - 20px);
-	bottom: -35px;
-	width: 40px;
-	height: 35px;
-	border-radius:0 0 6px 6px;
-	background: rgba(0,0,0,.4);
-	color: rgba(255,255,255,.5);
-	font-size: 18px;
-	line-height: 35px;
-	text-align: center;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-}
-#bgm i:hover { color: rgba(255,255,255,.7) }
+#bgm iframe	{ width:200px; }
+
 #wrapper,
 #wrapper iframe { width: 100%; height: 100%; }
 ::-webkit-scrollbar-track			{ background-color: #ceeaed; }
