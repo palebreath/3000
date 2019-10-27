@@ -5,9 +5,9 @@
 @import url(https://fonts.googleapis.com/css?family=Caesar+Dressing);
 @import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
 
-html { cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important }
-a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important; }
-p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto !important; }
+html { cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto }
+a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto; }
+p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
 body {
 	margin:0;
 	font-family:'noto sans kr', 'Spoqa Han Sans', 'malgun gothic', dotum;
