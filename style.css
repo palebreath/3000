@@ -1,16 +1,35 @@
 @charset "utf-8";
 
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(https://fonts.googleapis.com/css?family=Caesar+Dressing);
 @import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff) format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-demilight.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-demilight.woff) format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-bold.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-bold.woff) format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
 
 html { cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto }
 a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto; }
 p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
 body {
 	margin:0;
-	font-family:'noto sans kr', 'Spoqa Han Sans', 'malgun gothic', dotum;
+	font-family:'noto sans', 'malgun gothic', dotum;
 	font-size:15px;
 	line-height:2.2;
 	text-align:justify;
