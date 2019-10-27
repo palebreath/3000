@@ -36,7 +36,7 @@ body {
 }
 a	{ color:#999; text-decoration: none }
 
-#bgm	{ position:absolute; left:calc(50% - 120px); top:0; width:240px; }
+#bgm	{ display:none }
 #bgm iframe	{ width:200px; }
 
 ::-webkit-scrollbar-track			{ background-color: #ceeaed; }
@@ -52,6 +52,7 @@ html, body {
 }
 
 .background {
+  background-image: url('bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -78,7 +79,6 @@ html, body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .background:first-child {
-  background-image: url('bg.jpg');
   -webkit-transform: translateY(-15vh);
           transform: translateY(-15vh);
 }
