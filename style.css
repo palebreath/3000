@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Caesar+Dressing);
+@import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+
+html { cursor: url(http://rann.dothome.co.kr/yy/css/yh.ani), url(http://rann.dothome.co.kr/yy/css/yh.gif), auto !important }
+a, a:-webkit-any-link, a *, i, button { cursor: url(http://rann.dothome.co.kr/yy/css/yh_a.ani), url(http://rann.dothome.co.kr/yy/css/yh_a_.gif), auto !important; }
+p, span, textarea, input[type=text] { cursor: url(http://rann.dothome.co.kr/yy/css/yh_text.ani), url(http://rann.dothome.co.kr/yy/css/yh_text.gif), auto !important; }
+
+body {
+	margin:0;
+	background-size:cover;
+	font-family:'noto sans kr', 'Spoqa Han Sans', 'malgun gothic', dotum;
+	font-size:15px;
+	line-height:2.2;
+	text-align:justify;
+}
+a	{ color:#999; text-decoration: none }
+
+#bgm	{ position:absolute; left:calc(50% - 120px); top:0; width:240px; }
+#bgm i	{ 
+	position: absolute;
+	left: calc(50% - 20px);
+	bottom: -35px;
+	width: 40px;
+	height: 35px;
+	border-radius:0 0 6px 6px;
+	background: rgba(0,0,0,.4);
+	color: rgba(255,255,255,.5);
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+}
+#bgm i:hover { color: rgba(255,255,255,.7) }
+#wrapper,
+#wrapper iframe { width: 100%; height: 100%; }
+::-webkit-scrollbar-track			{ background-color: #ceeaed; }
+::-webkit-scrollbar-thumb			{ background: #4dbec8; }
+
+::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+::-moz-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+::-webkit-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+
+section:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	transform: scale(1.02);
+}
+section {
+	overflow: hidden;
+	position: relative;
+}
+article {
+	display:none;
+	position:relative;
+	top:50px;
+	max-width:700px;
+	margin:100px auto;
+	padding:0 2em;
+	opacity:0;
+}
+.fiu {
+	top:50px;
+	animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+	-webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-fill-mode: both;
+}
+p {
+	margin:0.5em 0;
+}
+
+#s1, #h1, #s2 {
+	color:rgba(255,255,255,.9);
+	text-shadow:0 0 1px #000;
+}
+#s1		{
+	display:table-cell;
+	width:100vw;
+	height:90vh;
+	vertical-align:middle;
+}
+
+#s1 b	{ cursor: url(http://rann.dothome.co.kr/yy/css/yh_a.ani), url(http://rann.dothome.co.kr/yy/css/yh_a_.gif), auto !important; }
+#s1:before {
+	background:#000 url(https://i.imgur.com/KMHkOYv.jpg) top center fixed;
+	background-size:cover;
+
+	-webkit-filter: blur(5px) brightness(50%);
+	-moz-filter: blur(5px) brightness(50%);
+	-o-filter: blur(5px) brightness(50%);
+	-ms-filter: blur(5px) brightness(50%);
+	filter: blur(5px) brightness(50%);
+}
+#s1 .h1{
+	padding:0 3px;
+	color: rgba(255,255,255,.6);
+	line-height: 0;
+	font-family:'Black Ops One', cursive;
+	text-shadow:none;
+    -webkit-animation: blink-caret 1s step-end infinite;
+    animation: blink-caret 1s step-end infinite;
+}
+#s1 .h1:hover #a2	{ color:rgba(255,255,255,.3); }
+@-webkit-keyframes blink-caret {
+    from, to {
+		color: transparent
+    }
+    50% {
+		color: rgba(255,255,255,.6)
+    }
+}
+@keyframes blink-caret {
+    from, to {
+		color: transparent
+    }
+    50% {
+		color: rgba(255,255,255,.6)
+    }
+}
+
+#h1:before,
+#s2:before {
+	z-index:-2;
+	background:#000 url(https://i.imgur.com/KMHkOYv.jpg) top center fixed;
+	background-size:cover;
+
+	-webkit-filter: blur(5px) brightness(10%);
+	-moz-filter: blur(5px) brightness(10%);
+	-o-filter: blur(5px) brightness(10%);
+	-ms-filter: blur(5px) brightness(10%);
+	filter: blur(5px) brightness(10%);
+}
+#h1 	{ margin:0 auto; padding:0 }
+#h1 h1	{
+	display:none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+#h1 span	{
+	color: rgba(255,255,255,.6);
+	font-size: 72px;
+	font-family: 'Caesar Dressing';
+	line-height: 90vh;
+	-webkit-transition: color .3s ease-in;
+	-moz-transition: color .3s ease-in;
+	-o-transition: color .3s ease-in;
+	cursor: url(http://rann.dothome.co.kr/yy/css/yh_a.ani), url(http://rann.dothome.co.kr/yy/css/yh_a.gif), auto !important;
+ }
+#h1 span:hover	{ color:rgba(0,0,0,.1); }
+
+@keyframes fadeInUp {from {opacity:0}to {top:0;opacity:1}}
+@-webkit-keyframes fadeInUp {from {opacity:0}to {top:0;opacity:1}}
