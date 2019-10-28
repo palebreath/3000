@@ -64,18 +64,20 @@ $(document).ready(function(){
 		$('#s1').delay(500).fadeOut(1000);
 		$('#title').delay(1500).fadeIn(1000);
 	});
-	$('#title').on('show',function(){animation();});
-	$('#title h1 span').mousemove(function(e){animation();});
+	$('#title').on('show',function(){
+		animation();
+	});
 	$('#title h1').click(function () {
-		$(this).fadeOut(1000);
+		animation();
+		$(this).delay(2000).fadeOut(1000);
 		$('#title').delay(500).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
 	});
 	function animation() {
 		var title1 = new TimelineMax();
 		title1.staggerFromTo("#title h1 span", 0.5, 
-		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -40},
-		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+		{ease: Back.easeOut.config(2), opacity: 0, bottom: -30},
+		{ease: Back.easeOut.config(2), opacity: 1, bottom: 0}, 0.05);
 	}
 })
 </script>
