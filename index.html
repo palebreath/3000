@@ -64,7 +64,7 @@ $(document).ready(function(){
 		$('#s1').delay(1000).fadeOut(1000);
 		$('#title').delay(1500).show(1000);
 	});
-	$('#title').on('show',function(){
+	$('#title').on('show',function() {
 		titleFadeIn();
 	});
 	$('#title h1').click(function () {
@@ -80,8 +80,8 @@ $(document).ready(function(){
 		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
 	}
 	function titleFadeOut() {
-		var title1 = new TimelineMax();
-		title1.staggerFromTo("#title h1 span", 0.5, 
+		var title2 = new TimelineMax();
+		title2.staggerFromTo("#title h1 span", 0.5, 
 		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: -30},
 		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: 0}, 0.05);
 	}
