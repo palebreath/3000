@@ -137,8 +137,9 @@ p {
 }
 #title h1 span {
 	display:block;
+	float:left;
 	position:relative;
-	cursor: cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto;
+	cursor: cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 }
 
 #title:before,
