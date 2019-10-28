@@ -11,6 +11,7 @@
 <body>
 <div id="bgm">
 	<iframe src="https://www.youtube.com/embed/videoseries?list=PLqsrOOmgIiLo-JuqIM2KxRErlgLAjDs6P&mute=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<i class="fas fa-music"></i>
 </div>
 <div class="container">
 	<section id="s1">
@@ -37,6 +38,18 @@
 <script>
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(document).ready(function(){
+		$('#bgm i').click(function() {
+			if($('#bgm').css('top') == '-190px') {
+				$('#bgm').animate({
+					top: '0'
+				}, 1000);
+			} else {
+				$('#bgm').animate({
+					top: '-190px'
+				}, 1000);
+			}
+		});
+	})
 	if(!isMobile) {
 		$(window).on("load",function(){
 			$("body").mCustomScrollbar({
