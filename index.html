@@ -62,14 +62,16 @@ $(document).ready(function(){
 		$(".title").lettering();
 		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(500).fadeOut(1000);
-		$('#title').delay(1500).fadeIn(1000);
-		animation();
+		$('#title').delay(1500).fadeIn(1000).animation();
 	});
 	$('#title h1').click(function () {
 		$(this).fadeOut(1000);
 		$('#title').delay(500).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
 	});
+	$('#title h1').mousemove(function(e){
+		$(this).animation();
+	}
 	function animation() {
 		var title1 = new TimelineMax();
 		title1.staggerFromTo("#title span", 0.5, 
