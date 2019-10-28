@@ -59,26 +59,21 @@ $(document).ready(function(){
 	}
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
+		$(".title").lettering();
 		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(500).fadeOut(1000);
 		$('#title').delay(1500).fadeIn(1000);
+		animation();
 	});
 	$('#title h1').click(function () {
 		$(this).fadeOut(1000);
 		$('#title').delay(500).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
 	});
-	
-	$(document).ready(function() {
-		$(".title").lettering();
-	});
-	$(document).ready(function() {
-		animation();
-	}, 1000);
 	function animation() {
 		var title1 = new TimelineMax();
 		title1.staggerFromTo("#title span", 0.5, 
-		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -40},
 		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
 	}
 })
