@@ -143,13 +143,11 @@ p {
 	position:relative;
 }
 #title h1:hover span {
-	animation-delay: 0s;
-	animation-direction: alternate;
+	animation-direction: 1.5s;
 	animation-name: wave;
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
-	-webkit-animation-delay: 0s;
-	-webkit-animation-duration: alternate;
+	-webkit-animation-duration: 1.5s;
 	-webkit-animation-name: wave;
 	-webkit-animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
@@ -167,48 +165,30 @@ p {
 #title h1 span:nth-child(8) {animation-delay:0.8s}
 #title h1 span:nth-child(9) {animation-delay:0.9s}
 @keyframes wave {
-	5% { top:0.1em }
-	10% { top:0.2em }
-	15% { top:0.3em }
-	20% { top:0.4em }
-	25% { top:0.5em }
+	0 	{ top:0.2em }
+	10% { top:0.4em }
+	20% { top:0.6em }
 	30% { top:0.4em }
-	35% { top:0.3em }
 	40% { top:0.2em }
-	45% { top:0.1em }
 	50% { top:0 }
-	55% { top:-0.1em }
 	60% { top:-0.2em }
-	65% { top:-0.3em }
 	70% { top:-0.4em }
-	75% { top:-0.5em }
-	80% { top:-0.4em }
-	85% { top:-0.3em }
-	90% { top:-0.2em }
-	95% { top:-0.1em }
-	100% { top:0 }
+	80% { top:-0.6em }
+	90% { top:-0.4em }
+	100% { top:-0.2em }
 }
 @-webkit-keyframes wave {
-	5% { top:0.1em }
-	10% { top:0.2em }
-	15% { top:0.3em }
-	20% { top:0.4em }
-	25% { top:0.5em }
+	0 	{ top:0.2em }
+	10% { top:0.4em }
+	20% { top:0.6em }
 	30% { top:0.4em }
-	35% { top:0.3em }
 	40% { top:0.2em }
-	45% { top:0.1em }
 	50% { top:0 }
-	55% { top:-0.1em }
 	60% { top:-0.2em }
-	65% { top:-0.3em }
 	70% { top:-0.4em }
-	75% { top:-0.5em }
-	80% { top:-0.4em }
-	85% { top:-0.3em }
-	90% { top:-0.2em }
-	95% { top:-0.1em }
-	100% { top:0 }
+	80% { top:-0.6em }
+	90% { top:-0.4em }
+	100% { top:-0.2em }
 }
 
 #title:before,
