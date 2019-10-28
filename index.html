@@ -62,16 +62,13 @@ $(document).ready(function(){
 	$('#s1 article i').click(function() {
 		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(1000).fadeOut(1000);
-		$('#title').delay(1500).show(1000);
-	});
-	$('#title').on('show',function() {
-		titleFadeIn();
+		$('#title').delay(1500).show(1000, titleFadeIn());
 	});
 	$('#title h1').click(function () {
 		titleFadeOut();
-		$(this).delay(2000).fadeOut(1000);
-		$('#title').delay(2500).fadeOut(1000);
-		$('#s2 article').delay(4000).show();
+		$(this).delay(1000).fadeOut(1000);
+		$('#title').delay(1500).fadeOut(1000);
+		$('#s2 article').delay(1500).show();
 	});
 	function titleFadeIn() {
 		var title1 = new TimelineMax();
