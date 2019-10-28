@@ -2,16 +2,16 @@
 <html lang="ko">
 <head>
 	<title>바다가 보이는 곳에</title>
-	<meta name="viewport" content="width=device-width", intial-scale=1.0, user-scalable="yes" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width", intial-scale=1.0, user-scalable="yes">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
 	<section id="s1">
 		<article class="fiu">
-			<p>　시간은 사람을 무디게 한다. 재겸은 자신이 무뎌졌다는 사실이 기꺼웠다. 더 이상은 어렸을 적처럼 도피하고 싶지 않았다. 성인이 된 즉시 싫은 것과 거리를 둘 수 있게 되기도 했고, 지금은 그때처럼 삶에 염증을 느끼는 것도 아니었으니. 부정적인 상황에 무뎌지는 것보다는 그렇지 않은 상황에 무뎌지는 게 낫다. 잘 지내고 있다는 반증이므로. 재겸은 그렇게 생각했다.</p>
+			<p>시간은 사람을 무디게 한다. 재겸은 자신이 무뎌졌다는 사실이 기꺼웠다. 더 이상은 어렸을 적처럼 도피하고 싶지 않았다. 성인이 된 즉시 싫은 것과 거리를 둘 수 있게 되기도 했고, 지금은 그때처럼 삶에 염증을 느끼는 것도 아니었으니. 부정적인 상황에 무뎌지는 것보다는 그렇지 않은 상황에 무뎌지는 게 낫다, 잘 지내고 있다는 반증이므로. 그러니 이 사실을 잊지 말아야 한다고……</p>
 			<i class="fas fa-long-arrow-alt-right"></i>
 		</article>
 	</section>
@@ -59,7 +59,7 @@ $(document).ready(function(){
 	}
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
-		$("#title").lettering();
+		$("#title h1").lettering();
 		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(500).fadeOut(1000);
 		$('#title').delay(1500).fadeIn(1000);
