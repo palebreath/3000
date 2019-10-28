@@ -34,7 +34,7 @@ html, body {
 	overflow: hidden;
 	cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto
 }
-a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto; }
+a, a:-webkit-any-link, a *, span, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto; }
 p, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
 body {
 	margin:0;
@@ -137,7 +137,6 @@ p {
 	font-family:'BBTreeCR';
 	color:rgba(255,255,255,.7);
 	text-shadow:0 0 1px #000;
-	cursor: cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 }
 #title h1 span {
 	display:block;
