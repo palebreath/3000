@@ -99,11 +99,11 @@ article {
 }
 .fiu {
 	top:50px;
-	animation-delay: 1s;
+	animation-delay: 3s;
     animation-duration: 1s;
     animation-name: slideInUp;
     animation-fill-mode: both;
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 3s;
     -webkit-animation-duration: 1s;
     -webkit-animation-name: slideInUp;
     -webkit-animation-fill-mode: both;
@@ -145,12 +145,12 @@ p {
 	position:relative;
 }
 #title h1:hover span {
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-direction: alternate;
 	animation-name: wave;
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 0s;
 	-webkit-animation-duration: alternate;
 	-webkit-animation-name: wave;
 	-webkit-animation-fill-mode: both;
