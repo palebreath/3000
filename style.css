@@ -100,13 +100,13 @@ article {
 .fiu {
 	top:50px;
 	animation-delay: 3s;
-    animation-duration: 1s;
-    animation-name: slideInUp;
-    animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-name: slideInUp;
+	animation-fill-mode: both;
 	-webkit-animation-delay: 3s;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-name: slideInUp;
-    -webkit-animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: slideInUp;
+	-webkit-animation-fill-mode: both;
 	transition: all 2s cubic-bezier(0.22, 0.44, 0, 1);
 	will-change: transform;
 	-webkit-backface-visibility: hidden;
@@ -155,6 +155,7 @@ p {
 	-webkit-animation-name: wave;
 	-webkit-animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
+	transition: all 1s cubic-bezier(0.22, 0.44, 0, 1);
 }
 
 #title h1 span:nth-child(0) {animation-delay:0}
@@ -167,8 +168,50 @@ p {
 #title h1 span:nth-child(7) {animation-delay:0.7s}
 #title h1 span:nth-child(8) {animation-delay:0.8s}
 #title h1 span:nth-child(9) {animation-delay:0.9s}
-@keyframes wave {from{transform:translateY(-0.5em)}to{transform:translateY(0.5em)}}
-@-webkit-keyframes slideInUp {from{transform:translateY(-0.5em)}to{transform:translateY(0.5em)}}
+@keyframes wave {
+	5% { top:0.1em }
+	10% { top:0.2em }
+	15% { top:0.3em }
+	20% { top:0.4em }
+	25% { top:0.5em }
+	30% { top:0.4em }
+	35% { top:0.3em }
+	40% { top:0.2em }
+	45% { top:0.1em }
+	50% { top:0 }
+	55% { top:-0.1em }
+	60% { top:-0.2em }
+	65% { top:-0.3em }
+	70% { top:-0.4em }
+	75% { top:-0.5em }
+	80% { top-:0.4em }
+	85% { top-:0.3em }
+	90% { top:-0.2em }
+	95% { top:-0.1em }
+	100% { top:0 }
+}
+@-webkit-keyframes wave {
+	5% { top:0.1em }
+	10% { top:0.2em }
+	15% { top:0.3em }
+	20% { top:0.4em }
+	25% { top:0.5em }
+	30% { top:0.4em }
+	35% { top:0.3em }
+	40% { top:0.2em }
+	45% { top:0.1em }
+	50% { top:0 }
+	55% { top:-0.1em }
+	60% { top:-0.2em }
+	65% { top:-0.3em }
+	70% { top:-0.4em }
+	75% { top:-0.5em }
+	80% { top-:0.4em }
+	85% { top-:0.3em }
+	90% { top:-0.2em }
+	95% { top:-0.1em }
+	100% { top:0 }
+}
 
 #title:before,
 #s2:before {
