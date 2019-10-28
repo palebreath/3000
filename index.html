@@ -3,7 +3,6 @@
 <head>
 	<title>바다가 보이는 곳에</title>
 	<meta name="viewport" content="width=device-width", intial-scale=1.0, user-scalable="yes" />
-	<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="shortcut icon" href="./favicon.ico" />
 	<link rel="stylesheet" href="../../sc/jquery.mCustomScrollbar.css">
@@ -32,7 +31,31 @@
 		</article>
 	</section>
 </div>
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="../../sc/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+$(document).ready(function(){
+	if(!isMobile) {
+		$(window).on("load",function(){
+			$("body").mCustomScrollbar({
+				theme:"minimal"
+			});
+		});
+	}
+	$('#s1 article').show();
+	$('.h1').click(function() {
+		$('#s1 p').fadeOut(1000);
+		$('#s1').delay(500).fadeOut(1000);
+		$('h1').delay(1500).fadeIn(1000);
+	});
+	$('h1 span').click(function () {
+		$('#title h1').fadeOut(1000);
+		$('#title').delay(500).fadeOut(1000);
+		$('#s2 article').delay(1000).show();
+	});
+})
+</script>
 </body>
 </html>
