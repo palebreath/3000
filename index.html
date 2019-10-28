@@ -16,7 +16,7 @@
 		</article>
 	</section>
 	<section id="title">
-		<h1>바다가 보이는 곳에</h1>
+		<h1><span>바다가 보이는 곳에</span></h1>
 	</section>
 	<section id="s2">
 		<article class="fiu">
@@ -59,7 +59,7 @@ $(document).ready(function(){
 	}
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
-		$('#s1 .flu').fadeOut(1000);
+		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(500).fadeOut(1000);
 		$('#title').delay(1500).fadeIn(1000);
 	});
@@ -77,7 +77,7 @@ $(document).ready(function(){
 	}, 1000);
 	function animation() {
 		var title1 = new TimelineMax();
-		title1.staggerFromTo("#title", 0.5, 
+		title1.staggerFromTo("#title span", 0.5, 
 		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
 		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
 	}
