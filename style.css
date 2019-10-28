@@ -197,5 +197,5 @@ h1 {
  }
 #title span:hover	{ color:rgba(0,0,0,.1); }
 
-@keyframes slideInUp {from {opacity:0;top:-20vh}to {top:0;opacity:1}}
-@-webkit-keyframes slideInUp {from {opacity:0;top:-20vh}to {top:0;opacity:1}}
+@keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
+@-webkit-keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
