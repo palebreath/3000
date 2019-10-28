@@ -137,12 +137,12 @@ p {
 	font-family:'BBTreeCR';
 	color:rgba(255,255,255,.7);
 	text-shadow:0 0 1px #000;
+	cursor: cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 }
 #title h1 span {
 	display:block;
 	float:left;
 	position:relative;
-	cursor: cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 	animation-delay: 1s;
     animation-duration: 1s;
     animation-name: wave;
