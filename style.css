@@ -155,18 +155,18 @@ p {
     -webkit-animation-fill-mode: both;
 }
 
-#title h1 span:nth-child(0) {animation-delay:-1s}
-#title h1 span:nth-child(1) {animation-delay:-0.9s}
-#title h1 span:nth-child(2) {animation-delay:-0.8s}
-#title h1 span:nth-child(3) {animation-delay:-0.7s}
-#title h1 span:nth-child(4) {animation-delay:-0.6s}
-#title h1 span:nth-child(5) {animation-delay:-0.5s}
-#title h1 span:nth-child(6) {animation-delay:-0.4s}
-#title h1 span:nth-child(7) {animation-delay:-0.3s}
-#title h1 span:nth-child(8) {animation-delay:-0.2s}
-#title h1 span:nth-child(9) {animation-delay:-0.1s}
-@keyframes wave {from{transform:translateY(-1em)}to{transform:translateY(1em)}}
-@-webkit-keyframes slideInUp {from{transform:translateY(-1em)}to{transform:translateY(1em)}}
+#title h1 span:nth-child(0) {animation-delay:0}
+#title h1 span:nth-child(1) {animation-delay:0.1s}
+#title h1 span:nth-child(2) {animation-delay:0.2s}
+#title h1 span:nth-child(3) {animation-delay:0.3s}
+#title h1 span:nth-child(4) {animation-delay:0.4s}
+#title h1 span:nth-child(5) {animation-delay:0.5s}
+#title h1 span:nth-child(6) {animation-delay:0.6s}
+#title h1 span:nth-child(7) {animation-delay:0.7s}
+#title h1 span:nth-child(8) {animation-delay:0.8s}
+#title h1 span:nth-child(9) {animation-delay:0.9s}
+@keyframes wave {from{transform:translateY(-0.5em)}to{transform:translateY(0.5em)}}
+@-webkit-keyframes slideInUp {from{transform:translateY(-0.5em)}to{transform:translateY(0.5em)}}
 
 #title:before,
 #s2:before {
