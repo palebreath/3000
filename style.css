@@ -115,6 +115,8 @@ p {
 	margin-bottom:0.5em;
 	text-align:justify;
 }
+.fa-long-arrow-alt-right	{ float:right }
+.fa-long-arrow-alt-right:hover	{ opacity:.7 }
 
 #s1, #title		{
 	display: flex;
