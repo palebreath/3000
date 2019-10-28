@@ -59,6 +59,7 @@ $(document).ready(function(){
 	}
 	$("#title h1").lettering();
 	$('#s1 article').delay(500).show();
+	$('#s1 article i').delay(1500).fadeIn();
 	$('#s1 article i').click(function() {
 		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(1000).fadeOut(1000);
@@ -69,9 +70,9 @@ $(document).ready(function(){
 	});
 	$('#title h1').click(function () {
 		titleFadeOut();
-		$(this).delay(2000).fadeOut(1000);
-		$('#title').delay(500).fadeOut(1000);
-		$('#s2 article').delay(1000).show();
+		$(this).delay(3000).fadeOut(1000);
+		$('#title').delay(3500).fadeOut(1000);
+		$('#s2 article').delay(4000).show();
 	});
 	function titleFadeIn() {
 		var title1 = new TimelineMax();
