@@ -46,7 +46,7 @@ body {
 a	{ color:#999; text-decoration: none }
 
 
-#bgm	{ position:absolute; left:20px; top:-190px; width:240px; }
+#bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; }
 #bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.4); }
 #bgm i	{ 
 	position: absolute;
