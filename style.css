@@ -37,6 +37,7 @@ a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/ot
 p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
 body {
 	margin:0;
+	background-image:url(bg.jpg);
 	font-family:'noto sans', 'malgun gothic', dotum;
 	font-size:15px;
 	line-height:2.2;
@@ -44,7 +45,26 @@ body {
 }
 a	{ color:#999; text-decoration: none }
 
-#bgm	{  }
+
+#bgm	{ position:absolute; left:20px; top:-190px; width:240px; }
+#bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.4); }
+#bgm i	{ 
+	position: absolute;
+	left: calc(50% - 20px);
+	bottom: -35px;
+	width: 40px;
+	height: 35px;
+	border-radius:0 0 6px 6px;
+	background: rgba(0,0,0,.4);
+	color: rgba(255,255,255,.5);
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+}
+#bgm i:hover { color: rgba(255,255,255,.7) }
 #bgm iframe	{ width:200px; } 
 
 ::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
