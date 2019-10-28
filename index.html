@@ -9,13 +9,10 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-	<div id="bgm">
-		<iframe src="https://www.youtube.com/embed/videoseries?list=PLqsrOOmgIiLo-JuqIM2KxRErlgLAjDs6P&mute=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<i class="fas fa-music"></i>
-	</div>
 	<section id="s1">
 		<article class="fiu">
 			<p>　시간은 사람을 무디게 한다. 재겸은 자신이 무뎌졌다는 사실이 기꺼웠다. 더 이상은 어렸을 적처럼 도피하고 싶지 않았다. 성인이 된 즉시 싫은 것과 거리를 둘 수 있게 되기도 했고, 지금은 그때처럼 삶에 염증을 느끼는 것도 아니었으니. 부정적인 상황에 무뎌지는 것보다는 그렇지 않은 상황에 무뎌지는 게 낫다. 잘 지내고 있다는 반증이므로. 재겸은 그렇게 생각했다.</p>
+			<i class="fas fa-long-arrow-alt-right"></i>
 		</article>
 	</section>
 	<section id="title">
@@ -30,6 +27,10 @@
 			<p>　그때 유의 입가엔 미소가 서려 있었다. 재겸이 제일 좋아하는 얼굴이다.</p>
 		</article>
 	</section>
+	<div id="bgm">
+		<iframe src="https://www.youtube.com/embed/videoseries?list=PLqsrOOmgIiLo-JuqIM2KxRErlgLAjDs6P&mute=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<i class="fas fa-music"></i>
+	</div>
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="jquery.mCustomScrollbar.concat.min.js"></script>
@@ -54,17 +55,30 @@ $(document).ready(function(){
 			});
 		});
 	}
-	$('#s1 article').show();
-	$('.h1').click(function() {
+	$('#s1 article').delay(500).show();
+	$('#s1 article i').click(function() {
 		$('#s1 p').fadeOut(1000);
 		$('#s1').delay(500).fadeOut(1000);
-		$('h1').delay(1500).fadeIn(1000);
+		$('#title').delay(1500).fadeIn(1000);
 	});
-	$('h1 span').click(function () {
-		$('#title h1').fadeOut(1000);
+	$('#title h1').click(function () {
+		$(this).fadeOut(1000);
 		$('#title').delay(500).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
 	});
+	
+	$(document).ready(function() {
+		$(".title").lettering();
+	});
+	$(document).ready(function() {
+		animation();
+	}, 1000);
+	function animation() {
+		var title1 = new TimelineMax();
+		title1.staggerFromTo(".title span", 0.5, 
+		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+	}
 })
 </script>
 </body>
