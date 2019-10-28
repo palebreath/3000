@@ -68,16 +68,22 @@ $(document).ready(function(){
 		animation();
 	});
 	$('#title h1').click(function () {
-		animation();
+		titleFadeOut();
 		$(this).delay(2000).fadeOut(1000);
 		$('#title').delay(500).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
 	});
-	function animation() {
+	function titleFadeIn() {
 		var title1 = new TimelineMax();
 		title1.staggerFromTo("#title h1 span", 0.5, 
-		{ease: Back.easeOut.config(2), bottom: -30},
-		{ease: Back.easeOut.config(2), bottom: 0}, 0.05);
+		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -30},
+		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+	}
+	function titleFadeOut() {
+		var title1 = new TimelineMax();
+		title1.staggerFromTo("#title h1 span", 0.5, 
+		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: -30},
+		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: 0}, 0.05);
 	}
 })
 </script>
