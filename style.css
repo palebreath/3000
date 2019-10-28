@@ -143,6 +143,8 @@ p {
 	display:block;
 	float:left;
 	position:relative;
+}
+#title h1:hover span {
 	animation-delay: 1s;
     animation-duration: 1s;
     animation-name: wave;
