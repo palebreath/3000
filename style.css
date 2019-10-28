@@ -146,13 +146,15 @@ p {
 }
 #title h1:hover span {
 	animation-delay: 1s;
-    animation-duration: 1s;
-    animation-name: wave;
-    animation-fill-mode: both;
+	animation-direction: alternate;
+	animation-name: wave;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
 	-webkit-animation-delay: 1s;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-name: wave;
-    -webkit-animation-fill-mode: both;
+	-webkit-animation-duration: alternate;
+	-webkit-animation-name: wave;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
 }
 
 #title h1 span:nth-child(0) {animation-delay:0}
