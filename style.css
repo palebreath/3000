@@ -144,13 +144,17 @@ p {
 #title:before,
 #s2:before {
 	z-index:-2;
-
 	-webkit-filter: blur(5px) brightness(10%);
 	-moz-filter: blur(5px) brightness(10%);
 	-o-filter: blur(5px) brightness(10%);
 	-ms-filter: blur(5px) brightness(10%);
 	filter: blur(5px) brightness(10%);
 }
+
+#s2 article	{
+	color:rgba(0,0,0,.8);
+	text-shadow:0 0 1px #fff;
+}	
 
 @keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
 @-webkit-keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
