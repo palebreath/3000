@@ -63,18 +63,13 @@ $(document).ready(function(){
 		$('#s1 .fiu').fadeOut(1000);
 		$('#s1').delay(500).fadeOut(1000);
 		$('#title').delay(1500).fadeIn(1000);
-		
 	});
-	$('#title').on('show',function(){
-		animation();
-	});
+	$('#title').on('show',function(){animation();});
+	$('#title h1 span').mousemove(function(e){animation();});
 	$('#title h1').click(function () {
 		$(this).fadeOut(1000);
 		$('#title').delay(500).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
-	});
-	$('#title h1 span').mousemove(function(e){
-		animation();
 	});
 	function animation() {
 		var title1 = new TimelineMax();
