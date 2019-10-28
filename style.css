@@ -64,8 +64,8 @@ a	{ color:#999; text-decoration: none }
 	-webkit-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 }
-#bgm i:hover { color: rgba(255,255,255,.7) }
-#bgm iframe	{ width:200px; } 
+#bgm i:hover	{ color: rgba(255,255,255,.7) }
+#bgm iframe		{ width:200px; } 
 
 ::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
 ::-moz-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
@@ -106,7 +106,7 @@ article {
     -webkit-animation-duration: 1s;
     -webkit-animation-name: slideInUp;
     -webkit-animation-fill-mode: both;
-	transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+	transition: all 2s cubic-bezier(0.22, 0.44, 0, 1);
 	will-change: transform;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -115,8 +115,8 @@ p {
 	margin-bottom:0.5em;
 	text-align:justify;
 }
-.fa-long-arrow-alt-right	{ float:right }
-.fa-long-arrow-alt-right:hover	{ opacity:.7 }
+.fa-long-arrow-alt-right		{ float:right }
+.fa-long-arrow-alt-right:hover	{ opacity:.5; transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1) }
 
 #s1, #title		{
 	display: flex;
@@ -128,17 +128,22 @@ p {
 
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
-h1 {
+#title h1 {
 	font-size:2em;
 	font-family:'BBTreeCR';
 	color:rgba(255,255,255,.7);
 	text-shadow:0 0 1px #000;
 	text-align:center;
 }
+#title h1 span {
+	display:block;
+	float:left;
+	position:relative;
+}
 
 #s1 .title{
 	padding:0 3px;
-	color: rgba(255,255,255,.6);
+	color:rgba(255,255,255,.6);
 	line-height: 0;
 	font-family:'Black Ops One', cursive;
 	text-shadow:none;
@@ -197,5 +202,5 @@ h1 {
  }
 #title span:hover	{ color:rgba(0,0,0,.1); }
 
-@keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
-@-webkit-keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
+@keyframes slideInUp {from {opacity:0;top:40vh}to {top:0;opacity:1}}
+@-webkit-keyframes slideInUp {from {opacity:0;top:40vh}to {top:0;opacity:1}}
