@@ -6,6 +6,8 @@
 	<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="stylesheet" href="../../sc/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
 <div id="bgm">
@@ -33,22 +35,7 @@
     </div>
   </section>
 </div>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
-<script>
-// ------------- ADD EVENT LISTENER ------------- //
-var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
-window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
-
-// ------------- SLIDE MOTION ------------- //
-function nextItem() {
-  var $previousSlide = $(".background").eq(currentSlideNumber - 1);
-  $previousSlide.removeClass("up-scroll").addClass("down-scroll");
-}
-
-function previousItem() {
-  var $currentSlide = $(".background").eq(currentSlideNumber);
-  $currentSlide.removeClass("down-scroll").addClass("up-scroll");
-}
-</script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../sc/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>
 </html>
