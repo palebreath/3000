@@ -47,7 +47,7 @@ a	{ color:#999; text-decoration: none }
 
 
 #bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; height:190px }
-#bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.4); }
+#bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); }
 #bgm i	{ 
 	position: absolute;
 	left: calc(50% - 20px);
@@ -56,7 +56,7 @@ a	{ color:#999; text-decoration: none }
 	height: 35px;
 	border-radius:0 0 6px 6px;
 	background: rgba(0,0,0,.4);
-	color: rgba(255,255,255,.5);
+	color: rgba(255,255,255,.1);
 	font-size: 18px;
 	line-height: 35px;
 	text-align: center;
