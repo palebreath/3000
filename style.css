@@ -34,7 +34,7 @@ html, body {
 	cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto
 }
 a, a:-webkit-any-link, a *, i, button { cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto; }
-p, span, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
+p, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto; }
 body {
 	margin:0;
 	background-image:url(bg.jpg);
