@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @font-face {
     font-family: 'Noto Sans';
     src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff2) format('woff2'),
@@ -38,7 +39,7 @@ p, textarea, input[type=text] { cursor: url(http://cur.cursors-4u.net/cursors/cu
 body {
 	margin:0;
 	background-image:url(bg.jpg);
-	font-family:'noto sans', 'malgun gothic', dotum;
+	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
 	font-size:15px;
 	line-height:2.2;
 	text-align:justify;
