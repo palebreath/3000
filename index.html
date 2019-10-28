@@ -57,11 +57,11 @@ $(document).ready(function(){
 			});
 		});
 	}
+	$("#title h1").lettering();
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
-		$("#title h1").lettering();
 		$('#s1 .fiu').fadeOut(1000);
-		$('#s1').delay(500).fadeOut(1000);
+		$('#s1').delay(1000).fadeOut(1000);
 		$('#title').delay(1500).fadeIn(1000);
 	});
 	$('#title h1').mousemove(function(e){
