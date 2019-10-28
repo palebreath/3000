@@ -114,6 +114,7 @@ article {
 p {
 	margin-bottom:0.5em;
 	text-align:justify;
+	text-indent:1em;
 }
 .fa-long-arrow-alt-right		{ float:right }
 .fa-long-arrow-alt-right:hover	{ opacity:.5; transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1) }
@@ -129,11 +130,12 @@ p {
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
 #title h1 {
+	display:flex;
+	justify-content:center;
 	font-size:2em;
 	font-family:'BBTreeCR';
 	color:rgba(255,255,255,.7);
 	text-shadow:0 0 1px #000;
-	text-align:center;
 }
 #title h1 span {
 	display:block;
@@ -157,5 +159,5 @@ p {
 	text-shadow:0 0 1px #fff;
 }	
 
-@keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
-@-webkit-keyframes slideInUp {from {opacity:0;top:20vh}to {top:0;opacity:1}}
+@keyframes slideInUp {from {opacity:0;top:20vh}to {opacity:1;top:0}}
+@-webkit-keyframes slideInUp {from {opacity:0;top:20vh}to {opacity:1;top:0}}
