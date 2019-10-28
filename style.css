@@ -100,12 +100,16 @@ article {
 	top:50px;
 	animation-delay: 1s;
     animation-duration: 1s;
-    animation-name: fadeInUp;
+    animation-name: slideInUp;
     animation-fill-mode: both;
 	-webkit-animation-delay: 1s;
     -webkit-animation-duration: 1s;
-    -webkit-animation-name: fadeInUp;
+    -webkit-animation-name: slideInUp;
     -webkit-animation-fill-mode: both;
+	transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+	will-change: transform;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 p {
 	margin-bottom:0.5em;
@@ -118,19 +122,6 @@ p {
 	flex-flow: column nowrap;
 	height: 100vh;
 	color: #fff;
-	text-transform: uppercase;
-	animation-delay: 1s;
-    animation-duration: 1s;
-    animation-name: slideInUp;
-    animation-fill-mode: both;
-	-webkit-animation-delay: 1s;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-name: slideInUp;
-    -webkit-animation-fill-mode: both;
-	will-change: transform;
-	-webkit-backface-visibility: hidden;
-		  backface-visibility: hidden;
-	transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
 
 h1 {
@@ -201,7 +192,5 @@ h1 {
  }
 #title span:hover	{ color:rgba(0,0,0,.1); }
 
-@keyframes fadeInUp {from {opacity:0}to {top:0;opacity:1}}
-@-webkit-keyframes fadeInUp {from {opacity:0}to {top:0;opacity:1}}
-@keyframes slideInUp {from {transform:translateY(40vh)}to {transform:translateY(0)}}
-@-webkit-keyframes slideInUp {from {transform:translateY(40vh)}to {transform:translateY(0)}}
+@keyframes slideInUp {from {opacity:0;top:-20vh}to {top:0;opacity:1}}
+@-webkit-keyframes slideInUp {from {opacity:0;top:-20vh}to {top:0;opacity:1}}
