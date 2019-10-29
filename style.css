@@ -31,6 +31,7 @@
 }
 *			{ transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out }
 i, button	{ cursor:pointer }
+html, body	{ scroll-behavior:smooth }
 body {
 	margin:0;
 	background-image:url(bg.jpg);
@@ -42,7 +43,7 @@ body {
 }
 a	{ text-decoration: none }
 
-#bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; height:190px }
+#bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px }
 #bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); }
 #bgm i	{ 
 	position: absolute;
@@ -61,7 +62,6 @@ a	{ text-decoration: none }
 	-ms-transition-duration:.3s;
 }
 #bgm i:hover	{ color: rgba(255,255,255,.6) }
-#bgm iframe		{ width:200px; } 
 
 ::selection			{ color:transparent; text-shadow:0 0 2px #999; transition-duration:.3s; -webkit-transition-duration:.3s; -ms-transition-duration:.3s }
 ::-moz-selection	{ color:transparent; text-shadow:0 0 2px #999; transition-duration:.3s; -webkit-transition-duration:.3s; -ms-transition-duration:.3s }
@@ -83,7 +83,6 @@ section {
 article {
 	display:none;
 	position:relative;
-	top:50px;
 	max-width:700px;
 	margin:100px auto;
 	padding:0 2em;
@@ -91,6 +90,7 @@ article {
 	text-shadow:0 0 1px #000;
 }
 .fiu {
+	top:50px;
 	animation-delay: 3s;
 	animation-duration: 1s;
 	animation-name: slideInUp;
