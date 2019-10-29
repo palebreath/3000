@@ -161,12 +161,12 @@ p {
 	-webkit-animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
 }
-#title h1 span.waveFadeOut	{
+#title h1 span.wave	{
 	animation-direction: 1s;
-	animation-name: waveFadeOut;
+	animation-name: wave;
 	animation-fill-mode: both;
 	-webkit-animation-duration: 1s;
-	-webkit-animation-name: waveFadeOut;
+	-webkit-animation-name: wave;
 	-webkit-animation-fill-mode: both;
 }
 
@@ -205,20 +205,6 @@ p {
 	50% { opacity:0.5;	transform:translateY(0) }
 	75% { opacity:0.75;	transform:translateY(-0.3em) }
 	100% { opacity:1;	transform:translateY(0) }
-}
-@keyframes waveFadeOut {
-	0%	{ opacity:1 }
-	25%	{ opacity:0.75;	transform:translateY(0.3em) }
-	50% { opacity:0.5;	transform:translateY(0) }
-	75% { opacity:0.25;	transform:translateY(-0.3em) }
-	100% { opacity:0;	transform:translateY(0) }
-}
-@-webkit-keyframes waveFadeOut {
-	0%	{ opacity:1 }
-	25%	{ opacity:0.75;	transform:translateY(0.3em) }
-	50% { opacity:0.5;	transform:translateY(0) }
-	75% { opacity:0.25;	transform:translateY(-0.3em) }
-	100% { opacity:0;	transform:translateY(0) }
 }
 
 #title:before,
