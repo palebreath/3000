@@ -133,13 +133,11 @@ p {
 #title h1 span		{
 	display:inline-block;
 	position:relative;
+	letter-spacing:8px;
 	animation-duration: 1s;
 	animation-name: waveFadeIn;
-	animation-fill-mode: both;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: waveFadeIn;
-	-webkit-animation-fill-mode: both;
-	transform:translateY(0);
 	transition:all 3s ease-in-out;
 	-webkit-transition:all 3s ease-in-out;
 	-ms-transition:all 3s ease-in-out;
