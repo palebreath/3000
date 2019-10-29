@@ -50,17 +50,17 @@ $(document).ready(function(){
 	}
 });
 $('#s1 article i').click(function() {
-	jQuery('#s1 article').fadeOut(1000);
-	jQuery('#s1').delay(1000).fadeOut(1000);
-	jQuery('#title').delay(2000).show();
+	$('#s1 article').addClass('fadeOut');
+	$('#s1').delay(1000).addClass('fadeOut');
+	$('#title').delay(2000).show();
 });
 $('#title h1').mousemove(function(e) {
-	jQuery(this).addClass('load');
+	$(this).addClass('load');
 });
 $('#title h1').click(function () {
-	jQuery(this).addClass('wave');
-	jQuery('#title').delay(1000).fadeOut(1000);
-	jQuery('#s2 article').delay(1500).show();
+	$(this).addClass('wave');
+	$('#title').delay(1000).addClass('fadeOut');
+	$('#s2 article').delay(1500).show();
 });
 $('#bgm i').click(function() {
 	if($('#bgm').css('top') == '-160px') $('#bgm').animate({top: '0'}, 500);
