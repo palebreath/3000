@@ -135,13 +135,9 @@ p {
 	display:inline-block;
 	position:relative;
 	letter-spacing:8px;
-	animation-duration: 1s;
-	animation-name: waveFadeIn;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-name: waveFadeIn;
-	transition:all 3s ease-in-out;
-	-webkit-transition:all 3s ease-in-out;
-	-ms-transition:all 3s ease-in-out;
+	animation: waveFadeIn 3s ease-in-out 3s both;
+	-webkit-animation: waveFadeIn 1s ease-in-out 3s both;
+	-ms-animation: waveFadeIn 3s ease-in-out 3s both;
 	cursor:pointer;
 }
 #title h1 span.wave		{
