@@ -51,8 +51,12 @@ $(document).ready(function(){
 	$('#s1 article').show();
 	$('#s1 article i').click(function() {
 		$('#s1 article').fadeOut(1000);
-		$('#s1').delay(500).fadeOut(1000);
-		$('#title').delay(3000).show();
+		setTimeout(function(){
+			$('#s1').fadeOut(1000);
+		},500);
+		setTimeout(function(){
+			$('#title').show();
+		},3000);
 	});
 	$('#title h1').mousemove(function(e) {
 		$(this).addClass('load');
