@@ -77,12 +77,7 @@ section:before {
 	z-index: -1;
 	transform: scale(1.01);
 }
-section { 
-	position: relative;
-	transition:all .3s ease-in-out;
-	-webkit-transition:all .3s ease-in-out;
-	-ms-transition:all .3s ease-in-out;
-}
+section { position: relative; }
 article {
 	display:none;
 	position:relative;
