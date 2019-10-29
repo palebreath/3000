@@ -136,12 +136,10 @@ p {
 	display:block;
 	float:left;
 	position:relative;
-	animation-delay: 5s;
-	animation-direction: 1.5s;
+	animation-direction: 1s;
 	animation-name: waveFadeIn;
 	animation-fill-mode: both;
-	animation-direction: 1.5s;
-	-webkit-animation-delay: 5s;
+	animation-direction: 1s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: waveFadeIn;
 	-webkit-animation-fill-mode: both;
@@ -154,22 +152,14 @@ p {
 	animation:none;
 }
 #title h1:hover span	{
-	animation-duration: 1s;
 	animation-name: wave;
-	animation-fill-mode: both;
 	animation-iteration-count: infinite;
-	-webkit-animation-duration: 1s;
 	-webkit-animation-name: wave;
-	-webkit-animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
 }
 #title h1 span.wave		{
-	animation-direction: 1s;
 	animation-name: wave;
-	animation-fill-mode: both;
-	-webkit-animation-duration: 1s;
 	-webkit-animation-name: wave;
-	-webkit-animation-fill-mode: both;
 }
 
 #title h1 span:nth-child(1) {animation-delay:1s}
