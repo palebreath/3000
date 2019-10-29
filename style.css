@@ -135,14 +135,15 @@ p {
 	display:inline-block;
 	position:relative;
 	letter-spacing:8px;
-	animation: waveFadeIn 3s ease-in-out 3s both;
+	animation: waveFadeIn 1s ease-in-out 3s both;
 	-webkit-animation: waveFadeIn 1s ease-in-out 3s both;
-	-ms-animation: waveFadeIn 3s ease-in-out 3s both;
+	-ms-animation: waveFadeIn 1s ease-in-out 3s both;
 	cursor:pointer;
 }
 #title h1 span.wave		{
-	animation-name: waveFadeOut;
-	-webkit-animation-name: waveFadeOut;
+	animation: waveFadeOut 1s ease-in-out 0 both;
+	-webkit-animation: waveFadeOut 1s ease-in-out 0 both;
+	-ms-animation: waveFadeOut 1s ease-in-out 0 both;
 }
 
 #title h1 span:nth-child(1) {animation-delay:0.1s}
