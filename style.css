@@ -184,12 +184,14 @@ p {
 }	
 
 @keyframes wave {
+	0%	{ transform:translateY(0) }
 	25%	{ transform:translateY(0.2em) }
 	50% { transform:translateY(0) }
 	75% { transform:translateY(-0.2em) }
 	100% { transform:translateY(0) }
 }
 @-webkit-keyframes wave {
+	0%	{ transform:translateY(0) }
 	25%	{ transform:translateY(0.3em) }
 	50% { transform:translateY(0) }
 	75% { transform:translateY(-0.3em) }
@@ -197,16 +199,16 @@ p {
 }
 @keyframes waveFadeIn {
 	0%	{ opacity:0 }
-	25%	{ opacity:0.25;	transform:translateY(0.3em) }
+	25%	{ opacity:0.25;	transform:translateY(0.2em) }
 	50% { opacity:0.5;		transform:translateY(0) }
-	75% { opacity:0.75;	transform:translateY(-0.3em) }
+	75% { opacity:0.75;	transform:translateY(-0.2em) }
 	100% { opacity:1;		transform:translateY(0) }
 }
 @-webkit-keyframes waveFadeIn {
 	0%	{ opacity:0 }
-	25%	{ opacity:0.25;	transform:translateY(0.3em) }
+	25%	{ opacity:0.25;	transform:translateY(0.2em) }
 	50% { opacity:0.5;		transform:translateY(0) }
-	75% { opacity:0.75;	transform:translateY(-0.3em) }
+	75% { opacity:0.75;	transform:translateY(-0.2em) }
 	100% { opacity:1;		transform:translateY(0) }
 }
 
