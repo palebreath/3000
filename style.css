@@ -137,9 +137,10 @@ p {
 	float:left;
 	position:relative;
 	animation-direction: 1s;
+	animation-duration: 1s;
 	animation-name: waveFadeIn;
 	animation-fill-mode: both;
-	animation-direction: 1s;
+	-webkit-animation-direction: 1s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: waveFadeIn;
 	-webkit-animation-fill-mode: both;
@@ -148,9 +149,7 @@ p {
 	-webkit-transition-duration:3s;
 	-ms-transition-duration:3s
 }
-#title h1.load span		{
-	animation:none;
-}
+#title h1.load span		{ animation:none }
 #title h1:hover span	{
 	animation-name: wave;
 	animation-iteration-count: infinite;
