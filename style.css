@@ -88,6 +88,7 @@ article {
 	text-shadow:0 0 1px #000;
 }
 .fiu {
+	opacity:0;
 	top:50px;
 	animation: slideInUp 2s ease-in-out 3s both;
 	-webkit-animation: slideInUp 1s ease-in-out 3s both;
@@ -132,6 +133,7 @@ p {
 	text-align:center;
 }
 #title h1 span		{
+	opacity:0;
 	display:inline-block;
 	position:relative;
 	letter-spacing:8px;
