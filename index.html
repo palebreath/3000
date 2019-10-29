@@ -50,20 +50,17 @@ $(document).ready(function(){
 	}
 });
 $('#s1 article i').click(function() {
-	$('#s1 p').fadeOut(1000,
-		$('#s1').fadeOut(1000,
-			$('#title').show()
-		)
-	);
+	$('#s1 p').fadeOut(1000);
+	$('#s1').delay(500).fadeOut(1000);
+	$('#title').delay(1500).show();
 });
 $('#title h1').mousemove(function(e) {
 	$(this).addClass('load');
 });
 $('#title h1').click(function () {
 	$(this).addClass('wave');
-	$('#title').fadeOut(1000,
-		$('#s2 article').show()
-	);
+	$('#title').delay(1000).fadeOut(1000);
+	$('#s2 article').delay(1500).show();
 });
 $('#bgm i').click(function() {
 	if($('#bgm').css('top') == '-160px') $('#bgm').animate({top: '0'}, 500);
