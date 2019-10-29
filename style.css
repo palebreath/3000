@@ -122,7 +122,7 @@ p {
 }
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
-#title div	{ display:none }
+#title		{ display:block }
 #title h1 	{
 	display:flex;
 	justify-content:center;
