@@ -35,12 +35,13 @@ body {
 	overflow:hidden;
 	margin:0;
 	background-image:url(bg.jpg);
+	color:#fff;
 	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
 	font-size:15px;
 	line-height:2.2;
 	text-align:justify;
 }
-a	{ color:#999; text-decoration: none }
+a	{ text-decoration: none }
 
 #bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; height:190px }
 #bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); }
@@ -114,12 +115,11 @@ p {
 .fa-long-arrow-alt-right		{ float:right }
 .fa-long-arrow-alt-right:hover	{ opacity:.3 }
 
-#s1, #title		{
+#s1, #title	div	{
 	display: flex;
 	justify-content: center;
 	flex-flow: column nowrap;
 	height: 100vh;
-	color: #fff;
 }
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
