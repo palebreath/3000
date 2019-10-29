@@ -168,6 +168,8 @@ p {
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: wave;
 	-webkit-animation-fill-mode: both;
+    -webkit-transition:-webkit-transform 2s;
+    transition:transform 2s;
 }
 
 #title h1 span:nth-child(1) {animation-delay:1s}
