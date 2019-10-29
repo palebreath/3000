@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @font-face {
     font-family: 'Noto Sans';
     src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff2) format('woff2'),
