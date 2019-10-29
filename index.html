@@ -49,7 +49,7 @@ $(function() {
 	}
 	$('#s1 article').show();
 	$('#s1 article i').on('click', function() {
-		$('#s1 article').fadeOut(1000, function() {
+		$('#s1 article').animate({opacity: '0'}, 1000, function() {
 			$('#s1').fadeOut(1000, function() {
 				$('#title').delay(3000).show();
 			});
