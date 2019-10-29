@@ -60,14 +60,14 @@ $(document).ready(function(){
 	$("#title h1").lettering();
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
-		$('#s1 article').css('opacity', '0');
-		$('#s1').delay(2000).css('opacity', '0');
+		$('#s1 article').animate({opacity: '0'}, 1000};
+		$('#s1').delay(2000).animate({opacity: '0'}, 1000};
 		$('#title').delay(3000).show();
 	});
 	$('#title h1').click(function () {
 		$(this).addClass('waveFadeOut');
-		$(this).delay(1000).css('opacity', '0');
-		$('#title').delay(1500).css('opacity', '0');
+		$(this).delay(1000).animate({opacity: '0'}, 1000};
+		$('#title').delay(1500).animate({opacity: '0'}, 1000};
 		$('#s2 article').delay(1500).show();
 	});
 })
