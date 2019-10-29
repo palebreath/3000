@@ -1,0 +1,21 @@
+<!DOCHTML>
+<html>
+<head>
+	<title>바다가 보이는 곳에</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<button>fadeOut</button>
+  <div id="title">나타나라</div>
+
+<script>
+$(function() {
+	$('button').click(function() {
+		$(this).fadeOut(1000);
+		$('#title').delay(3000).show();
+	});
+})
+</script>
+</body>
+</html>
