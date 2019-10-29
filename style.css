@@ -115,9 +115,8 @@ p {
 .fa-long-arrow-alt-right:hover	{ opacity:.3 }
 
 #s1, #title	div	{
-	display: flex;
-	justify-content: center;
-	flex-flow: column nowrap;
+	display:table-cell;
+	vertical-align:middle;
 	height: 100vh;
 }
 #s1:before		{ background-color:rgba(0,0,0,.5); }
