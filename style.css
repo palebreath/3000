@@ -122,7 +122,8 @@ p {
 }
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
-#title h1 {
+#title div	{ display:none }
+#title h1 	{
 	display:flex;
 	justify-content:center;
 	font-weight:300;
@@ -131,7 +132,7 @@ p {
 	text-shadow:0 0 5px #84a8b4;
 	cursor:pointer;
 }
-#title h1 span {
+#title h1 span		{
 	display:block;
 	float:left;
 	position:relative;
@@ -145,11 +146,14 @@ p {
 	-webkit-animation-name: waveFadeIn;
 	-webkit-animation-fill-mode: both;
 	transform:translateY(0);
+	transition-duration:3s;
+	-webkit-transition-duration:3s;
+	-ms-transition-duration:3s
 }
-#title h1.load span	{
+#title h1.load span		{
 	animation:none;
 }
-#title h1:hover span {
+#title h1:hover span	{
 	animation-duration: 1s;
 	animation-name: wave;
 	animation-fill-mode: both;
@@ -159,16 +163,13 @@ p {
 	-webkit-animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
 }
-#title h1 span.wave	{
+#title h1 span.wave		{
 	animation-direction: 1s;
 	animation-name: wave;
 	animation-fill-mode: both;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: wave;
 	-webkit-animation-fill-mode: both;
-	transition-duration:3s;
-	-webkit-transition-duration:3s;
-	-ms-transition-duration:3s
 }
 
 #title h1 span:nth-child(1) {animation-delay:1s}
