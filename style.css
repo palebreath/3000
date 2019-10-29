@@ -95,6 +95,9 @@ article {
 	-webkit-animation-delay: 3s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: slideInUp;
+	transition:all 2s ease-in-out;
+	-webkit-transition:all 2s ease-in-out;
+	-ms-transition:all 2s ease-in-out;
 	will-change: transform;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -109,6 +112,9 @@ p {
 	animation-name: fadeOut;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: fadeOut;
+	transition:all 2s ease-in-out;
+	-webkit-transition:all 2s ease-in-out;
+	-ms-transition:all 2s ease-in-out;
 }
 
 .fa-long-arrow-alt-right		{ float:right }
