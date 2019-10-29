@@ -43,7 +43,7 @@ body {
 }
 a	{ text-decoration: none }
 
-#bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; height:160px }
+#bgm	{ position:absolute; left:calc(50% - 120px); top:-160px; width:240px; height:160px }
 #bgm iframe	{ width:100%; height:100%; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); box-sizing:border-box }
 #bgm i	{ 
 	position: absolute;
