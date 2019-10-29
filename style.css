@@ -116,7 +116,7 @@ p {
 .fa-long-arrow-alt-right		{ float:right }
 .fa-long-arrow-alt-right:hover	{ opacity:.3 }
 
-#s1, #title	div	{
+#s1, #title	{
 	display:table-cell;
 	width:100vw;
 	height: 100vh;
@@ -127,8 +127,7 @@ p {
 
 #title		{ display:none }
 #title h1 	{
-	display:flex;
-	justify-content:center;
+	margin:0 auto;
 	font-weight:300;
 	font-size:2em;
 	font-family:'BBTreeCR';
