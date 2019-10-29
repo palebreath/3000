@@ -89,15 +89,9 @@ article {
 }
 .fiu {
 	top:50px;
-	animation-delay: 3s;
-	animation-duration: 1s;
-	animation-name: slideInUp;
-	-webkit-animation-delay: 3s;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-name: slideInUp;
-	transition:all 2s ease-in-out;
-	-webkit-transition:all 2s ease-in-out;
-	-ms-transition:all 2s ease-in-out;
+	animation: slideInUp 2s ease-in-out 3s both;
+	-webkit-animation: slideInUp 1s ease-in-out 3s both;
+	-ms-animation: slideInUp 2s ease-in-out 3s both;
 	will-change: transform;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -108,10 +102,10 @@ p {
 	letter-spacing:-0.2px;
 }
 .fadeOut	{
-	animation-duration: 1s;
 	animation-name: fadeOut;
-	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-name: fadeOut;
+	-webkit-animation-duration: 1s;
 	transition:all 2s ease-in-out;
 	-webkit-transition:all 2s ease-in-out;
 	-ms-transition:all 2s ease-in-out;
