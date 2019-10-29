@@ -34,7 +34,7 @@
 		<iframe src="https://www.youtube.com/embed/videoseries?list=PLqsrOOmgIiLo-JuqIM2KxRErlgLAjDs6P&mute=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<i class="fas fa-music"></i>
 	</div>
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
@@ -53,8 +53,8 @@ $(document).ready(function(){
 	});
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
-		$('#s1 article').animate({opacity: '0'}, 1000).hide();
-		$('#s1').delay(1000).animate({opacity: '0'}, 1000).hide();
+		$('#s1 article').fadeOut(1000);
+		$('#s1').delay(1000).fadeOut(1000);
 		$('#title').delay(2000).show();
 	});
 	$('#title h1').mousemove(function(e) {
@@ -62,7 +62,7 @@ $(document).ready(function(){
 	});
 	$('#title h1').click(function () {
 		$(this).addClass('wave');
-		$('#title').delay(1000).animate({opacity: '0'}, 1000).hide();
+		$('#title').delay(1000).fadeOut(1000);
 		$('#s2 article').delay(1500).show();
 	});
 })
