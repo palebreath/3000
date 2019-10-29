@@ -132,7 +132,6 @@ p {
 	font-family:'BBTreeCR';
 	text-shadow:0 0 5px #84a8b4;
 	text-align:center
-	cursor:pointer;
 }
 #title h1 span		{
 	display:block;
@@ -150,6 +149,7 @@ p {
 	transition:all 3s ease-in-out;
 	-webkit-transition:all 3s ease-in-out;
 	-ms-transition:all 3s ease-in-out;
+	cursor:pointer;
 }
 #title h1.load span		{ animation:none }
 #title h1.load:hover span	{
