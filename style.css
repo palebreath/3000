@@ -143,18 +143,23 @@ p {
 	display:inline-block;
 	position:relative;
 	letter-spacing:8px;
+	background-size: 100% 200%;
+	background-position: 0% 0%;
+	background-clip: text;
+	-webkit-background-clip: text;
 	animation: waveFadeIn 1s ease-in-out 3s both;
 	-webkit-animation: waveFadeIn 1s ease-in-out 3s both;
 	-ms-animation: waveFadeIn 1s ease-in-out 3s both;
-	transition:all 2s ease-in-out;
-	-webkit-transition:all 2s ease-in-out;
-	-ms-transition:all 2s ease-in-out;
+	transition:background 1s ease-in-out;
+	-webkit-transition:background 1s ease-in-out;
+	-ms-transition:background 1s ease-in-out;
 }
 #title h1 i:hover span {
 	background-color: #203a58;
-	-webkit-background-clip: text;
-	background-clip: text;
+	background-position: 100% 100%;
 	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
 	color: transparent;
 }
 #title h1 .wave span	{
