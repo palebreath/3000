@@ -1,88 +1,196 @@
-<!doctype html>
-<html lang="ko">
-<head>
-	<title>바다가 보이는 곳에</title>
-	<meta name="viewport" content="width=device-width", intial-scale=1.0, user-scalable="yes">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-</head>
-<body>
-	<section id="s1">
-		<article class="fiu">
-			<p>시간은 사람을 무디게 한다. 재겸은 자신이 무뎌졌다는 사실이 기꺼웠다. 더 이상은 어렸을 적처럼 도피하고 싶지 않았다. 성인이 된 즉시 싫은 것과 거리를 둘 수 있게 되기도 했고, 지금은 그때처럼 삶에 염증을 느끼는 것도 아니었으니. 부정적인 상황에 무뎌지는 것보다는 그렇지 않은 상황에 무뎌지는 게 낫다, 잘 지내고 있다는 반증이므로. 그러니 이 사실을 잊지 말아야 한다고……</p>
-			<i class="fas fa-long-arrow-alt-right"></i>
-		</article>
-	</section>
-	<section id="title">
-		<h1><span>바다가 보이는 곳에</span></h1>
-	</section>
-	<section id="s2">
-		<article class="fiu">
-			<p>　한 달 전, 재겸은 석사 학위를 가진 백수가 됐다. 그는 정말 간만에 여유로운 나날을 보내는 중으로, 추석엔 유와 함께 해외를 다녀오기도 했다. 둘은 적당히 게으름을 피우고, 적당히 걷고, 시원하게 웃었다. 신나게 놀고 숙소로 돌아오면 하늘은 붉었고 바다는 파랬다. 그들은 삼 일 내내 숙소 앞에 놓인 비치 베드에 드러누워 노을진 하늘을 바라보다가, 마지막 날에 이런 이야기를 했다.</p>
-			<p>　‘매일 봐도 질리지 않을 것 같아. 계속 보고 싶은데 아쉽다.’<br>
-			 ‘해가 지는 쪽으로 가자. 그럼 조금 더 볼 수 있지 않을까.’<br>
-			 ‘글쎄, 해 지는 걸 마흔 네 번은 봐야 만족할 수 있을 것 같은데.’</p>
-			<p>　그때 유의 입가엔 미소가 서려 있었다. 재겸이 제일 좋아하는 얼굴이다.</p>
-		</article>
-	</section>
-	<div id="bgm">
-		<iframe src="https://www.youtube.com/embed/videoseries?list=PLqsrOOmgIiLo-JuqIM2KxRErlgLAjDs6P&mute=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<i class="fas fa-music"></i>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="jquery.mCustomScrollbar.concat.min.js"></script>
-<script>
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-$(document).ready(function(){
-	$('#bgm i').click(function() {
-		if($('#bgm').css('top') == '-190px') {
-			$('#bgm').animate({
-				top: '0'
-			}, 1000);
-		} else {
-			$('#bgm').animate({
-				top: '-190px'
-			}, 1000);
-		}
-	});
-	if(!isMobile) {
-		$(window).on("load",function(){
-			$("body").mCustomScrollbar({
-				theme:"minimal"
-			});
-		});
-	}
-	$("#title h1").lettering();
-	$('#s1 article').delay(500).show();
-	$('#s1 article i').click(function() {
-		$('#s1 .fiu').fadeOut(1000);
-		$('#s1').delay(1000).fadeOut(1000);
-		$('#title').delay(1500).show(1000, titleFadeIn());
-	});
-	$('#title h1').click(function () {
-		titleFadeOut();
-		$(this).delay(1000).fadeOut(1000);
-		$('#title').delay(1500).fadeOut(1000);
-		$('#s2 article').delay(1500).show();
-	});
-	function titleFadeIn() {
-		var title1 = new TimelineMax();
-		title1.staggerFromTo("#title h1 span", 0.5, 
-		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: -30},
-		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
-	}
-	function titleFadeOut() {
-		var title2 = new TimelineMax();
-		title2.staggerFromTo("#title h1 span", 0.5, 
-		{ease: Back.easeOut.config(1.7), opacity: 1, bottom: -30},
-		{ease: Back.easeOut.config(1.7), opacity: 0, bottom: 0}, 0.05);
-	}
-})
-</script>
-</body>
-</html>
+@charset "utf-8";
+
+@import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff) format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-demilight.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-demilight.woff) format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-bold.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-bold.woff) format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face { 
+	font-family: 'BBTreeCR';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeCR.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	overflow: hidden;
+}
+a, a:-webkit-any-link, a *, span, i, button { cursor:pointer; }
+body {
+	margin:0;
+	background-image:url(bg.jpg);
+	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
+	font-size:15px;
+	line-height:2.2;
+	text-align:justify;
+}
+a	{ color:#999; text-decoration: none }
+
+
+#bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; height:190px }
+#bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); }
+#bgm i	{ 
+	position: absolute;
+	left: calc(50% - 20px);
+	bottom: -35px;
+	width: 40px;
+	height: 35px;
+	border-radius:0 0 6px 6px;
+	background: rgba(0,0,0,.1);
+	color: rgba(255,255,255,.1);
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+}
+#bgm i:hover	{ color: rgba(255,255,255,.7) }
+#bgm iframe		{ width:200px; } 
+
+::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+::-moz-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+::-webkit-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+
+section:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	transform: scale(1.01);
+}
+section {
+	overflow: hidden;
+	position: relative;
+}
+article {
+	display:none;
+	position:relative;
+	top:50px;
+	max-width:700px;
+	margin:100px auto;
+	padding:0 2em;
+	opacity:0;
+	color:rgba(255,255,255,.9);
+	text-shadow:0 0 1px #000;
+}
+.fiu {
+	animation-delay: 3s;
+	animation-duration: 1s;
+	animation-name: slideInUp;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 3s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: slideInUp;
+	-webkit-animation-fill-mode: both;
+	transition: all 2s cubic-bezier(0.22, 0.44, 0, 1);
+	will-change: transform;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+p {
+	margin-bottom:0.5em;
+	text-align:justify;
+	text-indent:1em;
+}
+.fa-long-arrow-alt-right		{ float:right }
+.fa-long-arrow-alt-right:hover	{ opacity:.5; transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1) }
+
+#s1, #title		{
+	display: flex;
+	justify-content: center;
+	flex-flow: column nowrap;
+	height: 100vh;
+	color: #fff;
+}
+
+#s1:before		{ background-color:rgba(0,0,0,.5); }
+
+#title h1 {
+	display:flex;
+	justify-content:center;
+	font-size:2em;
+	font-family:'BBTreeCR';
+	color:rgba(255,255,255,.7);
+	text-shadow:0 0 1px #000;
+	cursor:pointer;
+}
+#title h1 span {
+	display:block;
+	float:left;
+	position:relative;
+}
+#title h1:hover span {
+	animation-direction: 1.5s;
+	animation-name: wave;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-name: wave;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	transition: all 1s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+#title h1 span:nth-child(0) {animation-delay:0}
+#title h1 span:nth-child(1) {animation-delay:0.1s}
+#title h1 span:nth-child(2) {animation-delay:0.2s}
+#title h1 span:nth-child(3) {animation-delay:0.3s}
+#title h1 span:nth-child(4) {animation-delay:0.4s}
+#title h1 span:nth-child(5) {animation-delay:0.5s}
+#title h1 span:nth-child(6) {animation-delay:0.6s}
+#title h1 span:nth-child(7) {animation-delay:0.7s}
+#title h1 span:nth-child(8) {animation-delay:0.8s}
+#title h1 span:nth-child(9) {animation-delay:0.9s}
+#title h1 span:nth-child(10) {animation-delay:1s}
+@keyframes wave {
+	25%	{ top:0.3em }
+	50% { top:0 }
+	75% { top:-0.3em }
+	100% { top:0 }
+}
+@-webkit-keyframes wave {
+	25%	{ top:0.3em }
+	50% { top:0 }
+	75% { top:-0.3em }
+	100% { top:0 }
+}
+
+#title:before,
+#s2:before {
+	z-index:-2;
+	-webkit-filter: blur(5px) brightness(10%);
+	-moz-filter: blur(5px) brightness(10%);
+	-o-filter: blur(5px) brightness(10%);
+	-ms-filter: blur(5px) brightness(10%);
+	filter: blur(5px) brightness(10%);
+}
+
+#s2 article	{
+	color:rgba(0,0,0,.8);
+	text-shadow:0 0 1px #fff;
+}	
+
+@keyframes slideInUp {from {opacity:0;top:20vh}to {opacity:1;top:0}}
+@-webkit-keyframes slideInUp {from {opacity:0;top:20vh}to {opacity:1;top:0}}
