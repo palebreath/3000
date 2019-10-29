@@ -131,8 +131,7 @@ p {
 	justify-content:center;
 	font-size:2em;
 	font-family:'BBTreeCR';
-	color:rgba(255,255,255,.7);
-	text-shadow:0 0 1px #000;
+	text-shadow:0 0 1px #84a8b4;
 	cursor:pointer;
 }
 #title h1 span {
@@ -151,6 +150,9 @@ p {
 	transition: all 1s cubic-bezier(0.22, 0.44, 0, 1);
 	transform:translateY(0);
 }
+#title h1.load span	{
+	animation:none;
+}
 #title h1:hover span {
 	animation-direction: 1s;
 	animation-name: wave;
@@ -161,7 +163,7 @@ p {
 	-webkit-animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
 }
-#title h1:hover span.waveFadeOut	{
+#title h1 span.waveFadeOut	{
 	animation-direction: 1s;
 	animation-name: waveFadeOut;
 	animation-fill-mode: both;
