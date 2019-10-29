@@ -52,7 +52,7 @@ a	{ color:#999; text-decoration: none }
 	height: 35px;
 	border-radius:0 0 6px 6px;
 	background: rgba(0,0,0,.1);
-	color: rgba(255,255,255,.1);
+	color: rgba(255,255,255,.3);
 	font-size: 18px;
 	line-height: 35px;
 	text-align: center;
@@ -60,7 +60,7 @@ a	{ color:#999; text-decoration: none }
 	-webkit-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 }
-#bgm i:hover	{ color: rgba(255,255,255,.7) }
+#bgm i:hover	{ color: rgba(255,255,255,.6) }
 #bgm iframe		{ width:200px; } 
 
 ::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
@@ -111,7 +111,7 @@ p {
 	text-align:justify;
 }
 .fa-long-arrow-alt-right		{ float:right }
-.fa-long-arrow-alt-right:hover	{ opacity:.5; transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1) }
+.fa-long-arrow-alt-right:hover	{ opacity:.3; transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1) }
 
 #s1, #title		{
 	display: flex;
@@ -120,7 +120,6 @@ p {
 	height: 100vh;
 	color: #fff;
 }
-
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
 #title h1 {
