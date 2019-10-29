@@ -157,7 +157,7 @@ p {
 	-webkit-text-fill-color: transparent;
 	color: transparent;
 }
-#title h1 span.wave		{
+#title h1 .wave span	{
 	animation: waveFadeOut 1s ease-in-out .1s both;
 	-webkit-animation: waveFadeOut 1s ease-in-out .1s both;
 	-ms-animation: waveFadeOut 1s ease-in-out .1s both;
