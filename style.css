@@ -29,11 +29,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
-html, body {
-	overflow: hidden;
-}
-a, a:-webkit-any-link, a *, span, i, button { cursor:pointer; }
+*			{ transition: all 1s cubic-bezier(0.22, 0.44, 0, 1) }
+html, body	{ overflow: hidden }
+i, button	{ cursor:pointer }
 body {
 	margin:0;
 	background-image:url(bg.jpg);
@@ -43,7 +41,6 @@ body {
 	text-align:justify;
 }
 a	{ color:#999; text-decoration: none }
-
 
 #bgm	{ position:absolute; left:calc(50% - 120px); top:-190px; width:240px; height:190px }
 #bgm iframe	{ width:200px; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); }
@@ -129,9 +126,10 @@ p {
 #title h1 {
 	display:flex;
 	justify-content:center;
+	font-weight:300;
 	font-size:2em;
 	font-family:'BBTreeCR';
-	text-shadow:0 0 1px #84a8b4;
+	text-shadow:0 0 5px #84a8b4;
 	cursor:pointer;
 }
 #title h1 span {
@@ -154,7 +152,7 @@ p {
 	animation:none;
 }
 #title h1:hover span {
-	animation-direction: 1s;
+	animation-duration: 1s;
 	animation-name: wave;
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
@@ -183,9 +181,9 @@ p {
 #title h1 span:nth-child(9) {animation-delay:1.6s}
 #title h1 span:nth-child(10) {animation-delay:1.7s}
 @keyframes wave {
-	25%	{ transform:translateY(0.3em) }
+	25%	{ transform:translateY(0.2em) }
 	50% { transform:translateY(0) }
-	75% { transform:translateY(-0.3em) }
+	75% { transform:translateY(-0.2em) }
 	100% { transform:translateY(0) }
 }
 @-webkit-keyframes wave {
