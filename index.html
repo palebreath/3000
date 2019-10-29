@@ -60,14 +60,16 @@ $(document).ready(function(){
 	$("#title h1").lettering();
 	$('#s1 article').delay(500).show();
 	$('#s1 article i').click(function() {
-		$('#s1 .fiu').fadeOut(1000);
-		$('#s1').delay(2000).fadeOut(1000);
+		$('#s1 article').fadeOut(1000, function() {
+			$('#s1').fadeOut(1000);
+		});
 		$('#title').delay(3000).show();
 	});
 	$('#title h1').click(function () {
 		$(this).addClass('waveFadeOut');
-		$(this).delay(1000).fadeOut(1000);
-		$('#title').delay(1500).fadeOut(1000);
+		$(this).delay(1000).fadeOut(1000, function() {
+			$('#title').fadeOut(1000);
+		});
 		$('#s2 article').delay(1500).show();
 	});
 })
