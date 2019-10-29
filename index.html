@@ -35,25 +35,12 @@
 		<i class="fas fa-music"></i>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="jquery.mCustomScrollbar.concat.min.js"></script>-->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
-//var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(document).ready(function(){
 	$('#s1 article').show();
-	$('#s1 article i').click(function() {
-		$('#s1 article').fadeOut(1000);
-		/*$('#s1').delay(1000).fadeOut(1000);
-		$('#title').delay(2000).show();
-	});
-	$('#title h1').mousemove(function(e) {
-		$(this).addClass('load');
-	});
-	$('#title h1').click(function () {
-		$(this).addClass('wave');
-		$('#title').delay(1000).fadeOut(1000);
-		$('#s2 article').delay(1500).show();
-	});
 	if(!isMobile) {
 		$(window).on("load",function(){
 			$("body").mCustomScrollbar({
@@ -61,11 +48,24 @@ $(document).ready(function(){
 			});
 		});
 	}
-	$('#bgm i').click(function() {
-		if($('#bgm').css('top') == '-160px') $('#bgm').animate({top: '0'}, 500);
-		else $('#bgm').animate({top: '-160px'}, 500);*/
-	});
-})
+});
+$('#s1 article i').click(function() {
+	$('#s1 article').fadeOut(1000);
+	$('#s1').delay(1000).fadeOut(1000);
+	$('#title').delay(2000).show();
+});
+$('#title h1').mousemove(function(e) {
+	$(this).addClass('load');
+});
+$('#title h1').click(function () {
+	$(this).addClass('wave');
+	$('#title').delay(1000).fadeOut(1000);
+	$('#s2 article').delay(1500).show();
+});
+$('#bgm i').click(function() {
+	if($('#bgm').css('top') == '-160px') $('#bgm').animate({top: '0'}, 500);
+	else $('#bgm').animate({top: '-160px'}, 500);
+});
 </script>
 </body>
 </html>
