@@ -148,6 +148,13 @@ p {
 	-ms-animation: waveFadeIn 1s ease-in-out 3s both;
 	cursor:pointer;
 }
+#title h1 span:hover {
+	background-color: #203a58;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+}
 #title h1 span.wave		{
 	animation: waveFadeOut 1s ease-in-out 0 both;
 	-webkit-animation: waveFadeOut 1s ease-in-out 0 both;
