@@ -77,7 +77,12 @@ section:before {
 	z-index: -1;
 	transform: scale(1.01);
 }
-section { position: relative }
+section { 
+	position: relative;
+	transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+}
 article {
 	display:none;
 	position:relative;
@@ -90,12 +95,17 @@ article {
 .fiu {
 	opacity:0;
 	top:50px;
-	animation: slideInUp 2s ease-in-out 3s both;
+	animation: slideInUp 2s ease-in-out .5s both;
 	-webkit-animation: slideInUp 1s ease-in-out 3s both;
 	-ms-animation: slideInUp 2s ease-in-out 3s both;
 	will-change: transform;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+}
+#s1 .fiu {
+	animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
 }
 p {
 	margin:0.5em 0;
@@ -103,13 +113,9 @@ p {
 	letter-spacing:-0.2px;
 }
 .fadeOut	{
-	animation-name: fadeOut;
-	animation-duration: 1s;
-	-webkit-animation-name: fadeOut;
-	-webkit-animation-duration: 1s;
-	transition:all 2s ease-in-out;
-	-webkit-transition:all 2s ease-in-out;
-	-ms-transition:all 2s ease-in-out;
+	animation: fadeOut 1s ease-in-out both;
+	-webkit-animation: fadeOut 1s ease-in-out both;
+	-ms-animation: fadeOut 1s ease-in-out both;
 }
 
 .fa-long-arrow-alt-right		{ float:right }
