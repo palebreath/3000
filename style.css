@@ -152,7 +152,7 @@ p {
 	-ms-transition:all 3s ease-in-out;
 }
 #title h1.load span		{ animation:none }
-#title h1:hover span	{
+#title h1.load:hover span	{
 	animation-name: wave;
 	animation-iteration-count: infinite;
 	-webkit-animation-name: wave;
