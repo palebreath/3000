@@ -146,6 +146,9 @@ p {
 	animation: waveFadeIn 1s ease-in-out 3s both;
 	-webkit-animation: waveFadeIn 1s ease-in-out 3s both;
 	-ms-animation: waveFadeIn 1s ease-in-out 3s both;
+	transition:all 2s ease-in-out;
+	-webkit-transition:all 2s ease-in-out;
+	-ms-transition:all 2s ease-in-out;
 }
 #title h1 i:hover span {
 	background-color: #203a58;
