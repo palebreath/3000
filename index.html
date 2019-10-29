@@ -4,6 +4,7 @@
 	<title>바다가 보이는 곳에</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width", intial-scale=1.0, user-scalable="yes">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<section id="s1">
@@ -12,19 +13,22 @@
 			<i class="fas fa-long-arrow-alt-right"></i>
 		</article>
 	</section>
-	<section id="title" style="display:none">
+	<section id="title">
 		<h1><i><span>바</span><span>다</span><span>가</span><span> </span><span>보</span><span>이</span><span>는</span><span> </span><span>곳</span><span>에</span></i></h1>
 	</section>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(function() {
-	$('#s1 article i').click(function() {
-		$('#s1 article').fadeOut(1000);
-		//$('#s1').delay(500).fadeOut(1000);
-		$('#title').delay(3000).show();
+	$('#s1 article').show();
+	$('#s1 article i').on('click', function() {
+		$('#s1 article').fadeOut(1000, function() {
+			$('#s1').fadeOut(1000, function() {
+				$('#title').delay(3000).show();
+			});
+		});
 	});
-	$('#title h1 span').click(function () {
+	$('#title h1 span').on('click', function () {
 		$(this).addClass('wave');
 		$('#title').delay(500).fadeOut(1000);
 	});
