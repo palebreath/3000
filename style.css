@@ -116,8 +116,9 @@ p {
 
 #s1, #title	div	{
 	display:table-cell;
-	vertical-align:middle;
+	width:100vw;
 	height: 100vh;
+	vertical-align:middle;
 }
 #s1:before		{ background-color:rgba(0,0,0,.5); }
 
