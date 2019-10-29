@@ -32,6 +32,7 @@
 *			{ transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out }
 i, button	{ cursor:pointer }
 body {
+	overflow:hidden;
 	margin:0;
 	background-image:url(bg.jpg);
 	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
