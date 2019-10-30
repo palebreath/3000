@@ -133,6 +133,14 @@ p {
 	text-shadow:0 0 5px #84a8b4;
 	text-align:center;
 }
+#title h1 i	{
+	padding:0.7em 0.9em;
+	background: linear-gradient(135deg,
+	rgba(0,0,0,.1) 25%, transparent 0, transparent 50%,
+	rgba(0,0,0,.1) 0, rgba(0,0,0,.1) 75%, transparent 0);
+	-webkit-background-size:10px 10px;
+	background-size:10px 10px;
+}
 #title h1 span		{
 	opacity:0;
 	display:inline-block;
@@ -155,6 +163,7 @@ p {
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
+	text-shadow:0 0 5px #fff;
 	color: transparent;
 }
 #title h1 .wave span	{
