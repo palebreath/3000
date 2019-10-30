@@ -127,10 +127,9 @@ p {
 #title		{ display:none }
 #title h1 	{
 	margin:0 auto;
-	font-weight:300;
 	font-size:2em;
 	font-family:'BBTreeCR';
-	text-shadow:0 0 5px #84a8b4;
+	text-shadow:0 0 rgba(255,255,255,.5), 0 0 5px #84a8b4;
 	text-align:center;
 }
 #title h1 i	{
@@ -138,6 +137,9 @@ p {
 	background-image:linear-gradient(135deg, rgba(100,100,100,.1) 25%, transparent 0, transparent 50%, rgba(100,100,100,.1) 0, rgba(100,100,100,.1) 75%, transparent 0);
 	-webkit-background-size:10px 10px;
 	background-size:10px 10px;
+	animation: zoomIn 1s ease-in-out both;
+	-webkit-animation: zoomIn 1s ease-in-out both;
+	-ms-animation: zoomIn 1s ease-in-out both;
 }
 #title h1 span		{
 	opacity:0;
@@ -242,4 +244,25 @@ p {
 @-webkit-keyframes fadeOut {
 	from {opacity:1}
 	to {opacity:0}
+}
+@-webkit-keyframes zoomIn {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	100% {
+		opacity: 1;
+	}
 }
