@@ -144,12 +144,12 @@ p {
 	display:inline-block;
 	position:relative;
 	letter-spacing:8px;
-	background-image:linear-gradient(0deg, #203a58, #203a58 50%, #fff 50%);
+	background-image:linear-gradient(5deg, #203a58, #203a58 50%, #fff 50%);
 	background-size: 100% 200%;
 	background-position: 0% 0%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: rgba(255,255,255,.5);
 	animation: waveFadeIn 1s ease-in-out 3s both;
 	-webkit-animation: waveFadeIn 1s ease-in-out 3s both;
 	-ms-animation: waveFadeIn 1s ease-in-out 3s both;
@@ -159,6 +159,7 @@ p {
 }
 #title h1 i:hover span {
 	background-position: 100% 100%;
+	-webkit-text-fill-color: transparent;
 	text-shadow:0 0 5px #fff;
 }
 #title h1 .wave span	{
