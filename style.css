@@ -135,9 +135,7 @@ p {
 }
 #title h1 i	{
 	padding:0.7em 0.9em;
-	background: linear-gradient(135deg,
-	rgba(0,0,0,.1) 25%, transparent 0, transparent 50%,
-	rgba(0,0,0,.1) 0, rgba(0,0,0,.1) 75%, transparent 0);
+	background-image:linear-gradient(135deg, rgba(100,100,100,.1) 25%, transparent 0, transparent 50%, rgba(100,100,100,.1) 0, rgba(100,100,100,.1) 75%, transparent 0);
 	-webkit-background-size:10px 10px;
 	background-size:10px 10px;
 }
@@ -146,10 +144,12 @@ p {
 	display:inline-block;
 	position:relative;
 	letter-spacing:8px;
+	background-image:linear-gradient(0deg, #203a58, #203a58 50%, #fff 50%);
 	background-size: 100% 200%;
 	background-position: 0% 0%;
 	background-clip: text;
 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	animation: waveFadeIn 1s ease-in-out 3s both;
 	-webkit-animation: waveFadeIn 1s ease-in-out 3s both;
 	-ms-animation: waveFadeIn 1s ease-in-out 3s both;
@@ -158,13 +158,8 @@ p {
 	-ms-transition:background 1s ease-in-out;
 }
 #title h1 i:hover span {
-	background-color: #203a58;
 	background-position: 100% 100%;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	-webkit-background-clip: text;
 	text-shadow:0 0 5px #fff;
-	color: transparent;
 }
 #title h1 .wave span	{
 	animation: waveFadeOut 1s ease-in-out .1s both;
