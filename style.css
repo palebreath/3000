@@ -188,7 +188,6 @@ p {
 #title h1 span:nth-child(9) {animation-delay:0.7s}
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
-#s2::before { background-image:url(bg.jpg); }
 #s3::before { background-color:rgba(0,0,0,.5); z-index:0 }
 #s4::before { background-image:url(bg2.jpg); }
 #ep::before { position:fixed }
@@ -198,7 +197,7 @@ p {
 }	
 
 @media (min-width: 1024px) {
-	#title::before, #s2::before {
+	#bg1::before {
 		background-position: 0 -420px;
 	}
 }
