@@ -191,7 +191,6 @@ p {
 	right: 0;
 	bottom: 0;
 	background-image: url(bg.jpg);
-	background-size: cover;
 	background-attachment: fixed;
 	z-index: -1;
 	transform: scale(1.02);
@@ -199,6 +198,7 @@ p {
 }
 @media (min-width: 1024px) {
 	#s2::before {
+		background-size: cover;
 		background-position: 0 -420px;
 	}
 }
