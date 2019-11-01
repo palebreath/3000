@@ -56,10 +56,9 @@ $(function() {
 	}
 	$('#s1 article').show();
 	$('#s1 article i').on('click', function() {
-		$('#s1 article').fadeOut(1000, function() {
-			$('#s1').fadeOut(1000, function() {
-				$('#title').show();
-			});
+		$('#s1 article').addClass('fadeOut');
+		$('#s1').delay(1000).fadeOut(1000, function() {
+			$('#title').show();
 		});
 	});
 	$('#title h1 i').on('click', function () {
