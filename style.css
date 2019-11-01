@@ -41,6 +41,25 @@ body {
 	line-height:2.2;
 	text-align:justify;
 }
+#body::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(bg.jpg);
+	z-index: -1;
+	transform: scale(1.02);
+	filter: blur(5px);
+}
+@media (min-width: 1024px) {
+	#body::before {
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: 0 -420px;
+	}
+}
+
 a	{ text-decoration: none }
 
 #bgm	{ position:absolute; left:calc(50% - 120px); top:-160px; width:240px; height:160px }
@@ -184,24 +203,6 @@ p {
 #title h1 span:nth-child(9) {animation-delay:0.7s}
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
-#s2::before {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: url(bg.jpg);
-	background-attachment: fixed;
-	z-index: -1;
-	transform: scale(1.02);
-	filter: blur(5px);
-}
-@media (min-width: 1024px) {
-	#s2::before {
-		background-size: cover;
-		background-position: 0 -420px;
-	}
-}
 #s2 article	{
 	color:rgba(0,0,0,.8);
 	text-shadow:none;
