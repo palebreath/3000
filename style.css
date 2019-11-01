@@ -34,6 +34,7 @@ html, body	{ scroll-behavior:smooth }
 
 body {
 	margin:0;
+	background-color:rgba(0,0,0,.5);
 	color:#fff;
 	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
 	font-size:15px;
@@ -122,7 +123,7 @@ p {
 	height: 100vh;
 	vertical-align:middle;
 }
-#s1::before		{ background-color:rgba(0,0,0,.5); }
+#s1::before		{ background-color:rgba(0,0,0,.5); z-index:0 }
 
 #title		{ display:none }
 #title h1 	{
