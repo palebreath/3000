@@ -57,8 +57,8 @@ $(function() {
 	}
 	$('#s1 article').show();
 })
-$('#s1 article i').on('click', function() {
-	$('#s1 .fadeInUp').addClass('fadeOut');
+$('#s1 .fadeInUp i').on('click', function() {
+	$(this).parents('.fadeInUp').addClass('fadeOut');
 	$('#s1').delay(1000).fadeOut(1000, function() {
 		$('#title').show();
 	});
