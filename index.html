@@ -87,13 +87,13 @@ $(function() {
 $('#s1 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s1').delay(1000).fadeOut(1000, function() {
-		$('#title').show();
+		$('#title').delay(1000).show();
 	});
 });
 $('#title h1 i').on('click', function () {
 	$(this).addClass('wave');
 	$('#title').delay(1000).fadeOut(1000, function() {
-		$('#s2 .fadeInUp').show();
+		$('#s2 .fadeInUp').delay(1000).show();
 	});
 });
 $('#s2 .fas').on('click', function() {
