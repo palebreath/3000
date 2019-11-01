@@ -186,7 +186,7 @@ p {
 #title h1 span:nth-child(9) {animation-delay:0.7s}
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
-#s2 article	{
+#s2, #s3 {
 	color:rgba(0,0,0,.8);
 	text-shadow:0 0 1px #fff;
 }	
@@ -197,6 +197,10 @@ p {
 		background-size: cover;
 		background-attachment: fixed;
 	}
+}
+
+#s3::before {
+	background-color:rgba(0,0,0,.5);
 }
 
 #ep::before {
