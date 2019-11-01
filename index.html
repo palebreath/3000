@@ -68,7 +68,7 @@ $('#title h1 i').on('click', function () {
 	$('#title').delay(1000).fadeOut(1000);
 	$('#s2 article').delay(1000).show();
 });
-$('#s2').scroll(function() {
+$('.mCSB_container').scroll(function() {
 	var x = $(this).scrollTop();
 	$('#s2 div').css('background-position', '0% ' + parseInt(-x / 10) + 'px');
 });
