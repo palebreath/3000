@@ -198,10 +198,8 @@ p {
 }	
 
 @media (min-width: 1024px) {
-	section::before {
+	#title::before, #s2::before {
 		background-position: 0 -420px;
-		background-size: cover;
-		background-attachment: fixed;
 	}
 }
 	
