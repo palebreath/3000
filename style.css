@@ -33,7 +33,8 @@ i, button	{ cursor:pointer }
 html, body	{ scroll-behavior:smooth }
 
 body {
-	margin:10vh 0;
+	margin:0;
+	padding:10vh 0;
 	background-color:rgba(0,0,0,.5);
 	color:#fff;
 	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
@@ -49,7 +50,6 @@ body::before {
 	bottom: 0;
 	background-image: url(bg.jpg);
 	z-index: -1;
-	transform: scale(1.02);
 	filter: blur(5px);
 	content:"";
 }
