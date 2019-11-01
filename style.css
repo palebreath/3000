@@ -189,9 +189,9 @@ p {
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
 #s2::before { background-image:url(bg.jpg); }
-#s3::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:0 }
+#s3::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-2 }
 #s4::before {  }
-#ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-2; }
+#ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-3; }
 
 #s3			{
 	animation: FadeOut 1s ease-in-out .1s both reverse;
