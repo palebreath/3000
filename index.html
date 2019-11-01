@@ -58,8 +58,16 @@
 			<p>　못 이기는 척 넘어가 줄 때까지 부러 아래에서 유를 올려다본다. 더 따라붙는 말 없이도 그는 만족스러웠다.</p>
 		</article>
 	</section>
+	<section id="s5">
+		<article class="fadeInUp">
+			<p>　“바다 보니까 좋다.”<br>
+			　“나 백수니까 좋지.”<br>
+			　“당연한 얘길. 그리고 네가 바다 좋아하잖아.”</p>
+		</article>
+	</section>
 	<section id="ep">
 		<article class="fadeInUp">
+			<p>후기: 다음부턴 저도 윅스를 쓰겟어요 ㅅㅂㅋ 글쓸시간 다뺏김</p>
 			<p>흑흑 쓰면서 자꾸 유를 유야라고 적어서 몇 번이나 고쳤는지 모르겟네요 ㅋㅋ 저는 정말이지 너무 자격 미달인 앤오라서 항상 죄송하구 감사해요 벌써 3000일이에요 제 인생의 1/3을 유야와 함께할 수 있었어서 기뻐요 앞으로도 잘 부탁드릴게요 사랑합니다 S2</p>
 		</article>
 	</section>
@@ -107,6 +115,12 @@ $('#s3 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s3').delay(1000).fadeOut(1000, function() {
 		$('#s4 .fadeInUp').delay(1000).show();
+	});
+});
+$('#s4 .fas').on('click', function() {
+	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
+	$('#s4').delay(1000).fadeOut(1000, function() {
+		$('#s5 .fadeInUp').delay(1000).show();
 	});
 });
 $('#bgm i').click(function() {
