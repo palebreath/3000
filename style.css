@@ -35,7 +35,8 @@ html, body	{ scroll-behavior:smooth }
 body {
 	margin:0;
 	background-color:rgba(0,0,0,.5);
-	color:#fff;
+	color:rgba(0,0,0,.8);
+	text-shadow:0 0 1px #fff;
 	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
 	font-size:15px;
 	line-height:2.2;
@@ -86,8 +87,6 @@ article {
 	max-width:700px;
 	margin:0 auto;
 	padding:10em 2em 12em;
-	color:rgba(255,255,255,.9);
-	text-shadow:0 0 1px #000;
 }
 .fadeInUp {
 	opacity:0;
@@ -99,6 +98,7 @@ article {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+#s1	{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
 #s1 .fadeInUp {
 	animation-delay: 3s;
 	-webkit-animation-delay: 3s;
@@ -119,7 +119,7 @@ p {
 }
 
 .fa-long-arrow-alt-right		{ float:right }
-.fa-long-arrow-alt-right:hover	{ opacity:.3 }
+.fa-long-arrow-alt-right:hover	{ opacity:.3;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out; }
 
 #s1, #title h1 {
 	display:table-cell;
