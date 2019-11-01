@@ -75,7 +75,6 @@ section::before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url(bg.jpg);
 	z-index: -1;
 	transform: scale(1.02);
 	filter: blur(5px);
@@ -121,13 +120,14 @@ p {
 .fa-long-arrow-alt-right		{ float:right;cursor:pointer }
 .fa-long-arrow-alt-right:hover	{ opacity:.3;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out; }
 
+#s1::before		{ background-color:rgba(0,0,0,.5); z-index:0 }
+#title::before		{ position:fixed; background-image:url(bg.jpg); }
 #s1, #title h1 {
 	display:table-cell;
 	width:100vw;
 	height: 100vh;
 	vertical-align:middle;
 }
-#s1::before		{ background-color:rgba(0,0,0,.5); background-image:none; z-index:0 }
 
 #title		{ display:none }
 #title h1 	{
@@ -145,6 +145,8 @@ p {
 	animation: zoomIn 1s ease-in-out both;
 	-webkit-animation: zoomIn 1s ease-in-out both;
 	-ms-animation: zoomIn 1s ease-in-out both;
+	cursor:pointer;
+	
 }
 #title h1 span		{
 	opacity:0;
@@ -186,7 +188,11 @@ p {
 #title h1 span:nth-child(9) {animation-delay:0.7s}
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
-#s2, #s3 {
+#s2::before { background-image:url(bg.jpg); }
+#s3::before { background-color:rgba(0,0,0,.5); z-index:0 }
+#s4::before { background-image:url(bg2.jpg); }
+#ep::before { position:fixed }
+#s2, #s3, #s4, #ep {
 	color:rgba(0,0,0,.8);
 	text-shadow:0 0 1px #fff;
 }	
@@ -197,14 +203,6 @@ p {
 		background-size: cover;
 		background-attachment: fixed;
 	}
-}
-
-#s3::before {
-	background-color:rgba(0,0,0,.5);
-}
-
-#ep::before {
-	position:fixed
 }
 	
 @keyframes wave {
