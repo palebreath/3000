@@ -87,7 +87,7 @@ article {
 	color:rgba(255,255,255,.9);
 	text-shadow:0 0 1px #000;
 }
-.fiu {
+.fadeInUp {
 	opacity:0;
 	top:50px;
 	animation: slideInUp 2s ease-in-out .5s both;
@@ -97,7 +97,7 @@ article {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-#s1 .fiu {
+#s1 .fadeInUp {
 	animation-delay: 3s;
 	-webkit-animation-delay: 3s;
 	-ms-animation-delay: 3s;
