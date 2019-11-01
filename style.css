@@ -108,10 +108,12 @@ p {
 	letter-spacing:-0.2px;
 }
 .fadeOut	{
-	top: 0;
-	animation: fadeOut 1s ease-in-out 0 both;
-	-webkit-animation: fadeOut 1s ease-in-out 0 both;
-	-ms-animation: fadeOut 1s ease-in-out 0 both;
+	animation: fadeOut ease-in-out both;
+	-webkit-animation: fadeOut ease-in-out both;
+	-ms-animation: fadeOut ease-in-out both;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-ms-animation-duration: 1s;
 }
 
 .fa-long-arrow-alt-right		{ float:right }
