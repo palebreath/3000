@@ -193,6 +193,11 @@ p {
 #s4::before {  }
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-2; }
 
+#s3			{
+	animation: FadeOut 1s ease-in-out .1s both reverse;
+	-webkit-animation: FadeOutv 1s ease-in-out .1s both reverse;
+	-ms-animation: FadeOut 1s ease-in-out .1s both reverse;
+}
 @media (min-width: 1024px) {
 }
 	
