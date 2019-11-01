@@ -120,10 +120,9 @@ p {
 .fa-long-arrow-alt-right		{ float:right;cursor:pointer }
 .fa-long-arrow-alt-right:hover	{ opacity:.3;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out; }
 
-#s1::before,
-#title::before		{ background-image:url(bg.jpg); }
-#s1					{ background-color:rgba(0,0,0,.5); }
-#s1, #title h1		{
+#s1::before		{ background-color:rgba(0,0,0,.5); z-index:0 }
+#bg1::before		{ position:fixed; background-image:url(bg.jpg); }
+#s1, #title h1 {
 	display:table-cell;
 	width:100vw;
 	height: 100vh;
@@ -199,7 +198,7 @@ p {
 }	
 
 @media (min-width: 1024px) {
-	#s1::before, #title::before, #s2::before {
+	#title::before, #s2::before {
 		background-position: 0 -420px;
 	}
 }
