@@ -83,13 +83,13 @@ article {
 	position:relative;
 	max-width:700px;
 	margin:0 auto;
-	padding:5em 2em;
+	padding:10em 2em;
 	color:rgba(255,255,255,.9);
 	text-shadow:0 0 1px #000;
 }
 .fadeInUp {
 	opacity:0;
-	top:50px;
+	top:3em;
 	animation: slideInUp 2s ease-in-out .5s both;
 	-webkit-animation: slideInUp 1s ease-in-out .5s both;
 	-ms-animation: slideInUp 2s ease-in-out .5s both;
@@ -184,18 +184,23 @@ p {
 #title h1 span:nth-child(9) {animation-delay:0.7s}
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
-#s2 div {
+#s2::before {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-    background-image: url(bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+	background-image: url(bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 	z-index: -1;
 	transform: scale(1.02);
-    filter: blur(5px);
+	filter: blur(5px);
+}
+@media (min-width: 1024px) {
+	#s2::before {
+		background-position: 0 -420px;
+	}
 }
 #s2 article	{
 	color:rgba(0,0,0,.8);
