@@ -29,7 +29,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-i, button	{ cursor:pointer }
 html, body	{ scroll-behavior:smooth }
 
 body {
@@ -61,6 +60,7 @@ a	{ text-decoration: none }
 	transition:all .3s ease-in-out;
 	-webkit-transition:all .3s ease-in-out;
 	-ms-transition:all .3s ease-in-out;
+	cursor:pointer
 }
 #bgm i:hover	{ color: rgba(255,255,255,.6) }
 
@@ -118,7 +118,7 @@ p {
 	-ms-animation-duration: 1s;
 }
 
-.fa-long-arrow-alt-right		{ float:right }
+.fa-long-arrow-alt-right		{ float:right;cursor:pointer }
 .fa-long-arrow-alt-right:hover	{ opacity:.3;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out; }
 
 #s1, #title h1 {
