@@ -46,7 +46,16 @@
 			<p>　<i>유야. 응. 주말에 바다 보러 가자.</i></p>
 			<p>　다시 그 장면을 보려고,</p>
 			<p>　<i>말 돌리지 말고. 보러 가고 싶어. ……그래. 사랑하는 거 알지.</i></p>
-			<p>　못 이기는 척 넘어가 줄 때까지 부러 아래에서 유를 올려다본다.</p>
+			<p>　못 이기는 척 넘어가 줄 때까지 부러 아래에서 유를 올려다본다. 더 따라붙는 말은 없었지만 그는 만족스러웠다.</p>
+		</article>
+	</section>
+	<section id="s4">
+		<article class="fadeInUp">
+			<p>　그리고 재겸은, 이 장면을 한국에 돌아와서도 종종 되새긴다. 이럴 시기는 애저녁에 지났다고 생각하면서도 이전과는 달리 길게 늘어지는 시간 사이사이에 하늘에 드리우는 노을처럼 서서히 스며드는 데에는 달리 어쩔 도리가 없다. 어떤 때에는 사람을 앞에 두고도 상념에 빠져, 핀잔을 듣는다. <i>나 네 생각 하고 있었는데. 날 앞에 두고? 집중 좀 하지. 정말이야.</i> 그러고 나면 대화의 흐름을 놓친 건 재겸 본인이면서도 빈말로 치부당하니 억울해지는 것이다. 그래서 그는,</p>
+			<p>　<i>유야. 응. 주말에 바다 보러 가자.</i></p>
+			<p>　다시 그 장면을 보려고,</p>
+			<p>　<i>말 돌리지 말고. 보러 가고 싶어. ……그래. 사랑하는 거 알지.</i></p>
+			<p>　못 이기는 척 넘어가 줄 때까지 부러 아래에서 유를 올려다본다. 더 따라붙는 말은 없었지만 그는 만족스러웠다.</p>
 		</article>
 	</section>
 	<section id="ep">
@@ -75,7 +84,7 @@ $(function() {
 	}
 	$('#s1 .fadeInUp').show();
 })
-$('#s1 .fadeInUp i').on('click', function() {
+$('#s1 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s1').delay(1000).fadeOut(1000, function() {
 		$('#title').show();
@@ -87,10 +96,16 @@ $('#title h1 i').on('click', function () {
 		$('#s2 .fadeInUp').show();
 	});
 });
-$('#s2 .fadeInUp i').on('click', function() {
+$('#s2 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s2').delay(1000).fadeOut(1000, function() {
 		$('#s3 .fadeInUp').delay(1000).show();
+	});
+});
+$('#s3 .fas').on('click', function() {
+	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
+	$('#s3').delay(1000).fadeOut(1000, function() {
+		$('#s4 .fadeInUp').delay(1000).show();
 	});
 });
 $('#bgm i').click(function() {
