@@ -24,7 +24,7 @@
 	<section id="title">
 		<h1><i><span>바</span><span>다</span><span>가</span><span> </span><span>보</span><span>이</span><span>는</span><span> </span><span>곳</span><span>에</span></i></h1>
 	</section>
-	<section id="s2">
+	<section id="s2" data-parallax="scroll" data-image-src="bg.jpg">
 		<article class="fiu">
 			<p>　두 달 전, 재겸은 석사 학위를 가진 백수가 됐다. 유와 재회한 이후로 처음 가지는 여유였다. 정석처럼 대학원 졸업 전에 직장을 정하고 졸업하자마자 일을 다닐 수 있었으나 그는 담당 교수에게 등짝을 맞으면서까지 유예를 선택했다. 교수 입장에서나 속이 터지지, 재겸에겐 너무 당연한 일이었다. 유와 알아 온 십 년이 넘는 시간 중, 연인답게 지냈던 시간은 삼 년이 채 되지 않았으므로. 그의 연인은 이미 초임 딱지를 뗀 선생님이지만 대학원생보단 연애할 시간이 충분했다. 재겸은 유의 퇴근 시간에 맞추어 데리러 가고, 심야 영화를 보거나 근교로 드라이브를 나갔다. 주말엔 카페에서 유의 일을 돕기도 했다. 근 2년간 어떻게 시간이 흘렀는지 모를 정도로 정신이 없던 것에 비하면 느긋하고 따사로운 시간이었다. 오로지 유의 영향력 안에만 소속되어 온전히 그를 향유하고 있으니 감회가 새로웠다. 고등학생 시절로 돌아가기라도 한 것처럼 새삼스럽게 심장이 뛰었다.</p>
 			<p>　추석 연휴 항공권을 구매한 건 졸업 논문을 승인받은 날이었다. 재겸은 사전에 여행 밑밥을 깔아 유의 일정을 비워 두고선, 연휴 전날 밤, 퇴근하는 그를 픽업하여 그길로 밤 비행기에 올랐다. 유가 그의 독단에 불만을 표현할 새도 없었다. 유의 좌석에서 기다리고 있던 건 그의 여권과 항공권이었고, 재겸은 액셀러레이터를 밟았으며 또 재겸의 행동을 어느 정도는 예상할 수 있었기 때문이다. 재겸 역시 유가 놀라지 않을 것을 알고 있던 것처럼 평이한 어조로 별로 안 놀라네, 라고 말했다. 유는 네가 무슨 일이든 터트릴 것 같았어, 하고 여상하게 맞받아쳤다.</p>
@@ -44,6 +44,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="parallax.min.js"></script>
 <script>
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(function() {
@@ -71,6 +72,7 @@ $(function() {
 		else $('#bgm').animate({top: '-160px'}, 500);
 	});
 })
+$('#s2').parallax({imageSrc: 'bg.jpg'});
 </script>
 </body>
 </html>
