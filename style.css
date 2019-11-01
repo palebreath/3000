@@ -97,7 +97,7 @@ article {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-#s1	{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
+#s1, #s3, #s4, #s5	{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
 #s1 .fadeInUp {
 	animation-delay: 3s;
 	-webkit-animation-delay: 3s;
@@ -192,10 +192,6 @@ p {
 #s3::before { background-color:rgba(0,0,0,.5); z-index:0 }
 #s4::before {  }
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-2; }
-#s2, #s3, #s4, #ep {
-	color:rgba(0,0,0,.8);
-	text-shadow:0 0 1px #fff;
-}	
 
 @media (min-width: 1024px) {
 }
