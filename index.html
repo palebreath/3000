@@ -67,12 +67,12 @@ $(function() {
 		$('#title').delay(1000).fadeOut(1000);
 		$('#s2 article').delay(1000).show();
 	});
+	$('#s2').parallax({imageSrc: 'bg.jpg'});
 	$('#bgm i').click(function() {
 		if($('#bgm').css('top') == '-160px') $('#bgm').animate({top: '0'}, 500);
 		else $('#bgm').animate({top: '-160px'}, 500);
 	});
 })
-$('#s2').parallax({imageSrc: 'bg.jpg'});
 </script>
 </body>
 </html>
