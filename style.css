@@ -33,7 +33,7 @@ i, button	{ cursor:pointer }
 html, body	{ scroll-behavior:smooth }
 
 body {
-	margin:0;
+	margin:10em 0;
 	background-color:rgba(0,0,0,.5);
 	color:#fff;
 	font-family:'noto sans kr', 'noto sans', 'malgun gothic', dotum;
@@ -46,7 +46,7 @@ a	{ text-decoration: none }
 #bgm	{ position:absolute; left:calc(50% - 120px); top:-160px; width:240px; height:160px }
 #bgm iframe	{ width:100%; height:100%; padding:20px; border-radius:0 0 6px 6px; background:rgba(0,0,0,.1); box-sizing:border-box }
 #bgm i	{ 
-	position: absolute;
+	position: fixed;
 	left: calc(50% - 20px);
 	bottom: -35px;
 	width: 40px;
@@ -83,7 +83,7 @@ article {
 	position:relative;
 	max-width:700px;
 	margin:0 auto;
-	padding:10em 2em;
+	padding:0 2em;
 	color:rgba(255,255,255,.9);
 	text-shadow:0 0 1px #000;
 }
