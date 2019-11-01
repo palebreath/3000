@@ -61,7 +61,7 @@ $(function() {
 			});
 		});
 	}
-	$('#s1 article').show();
+	$('#s1 .fadeInUp').show();
 })
 $('#s1 .fadeInUp i').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
@@ -71,13 +71,14 @@ $('#s1 .fadeInUp i').on('click', function() {
 });
 $('#title h1 i').on('click', function () {
 	$(this).addClass('wave');
-	$('#title').delay(1000).fadeOut(1000);
-	$('#s2 article').delay(1000).show();
+	$('#title').delay(1000).fadeOut(1000, function() {
+		$('#s2 .fadeInUp').show();
+	});
 });
 $('#s2 .fadeInUp i').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s2').delay(1000).fadeOut(1000, function() {
-		$('#s3 article').delay(1000).show();
+		$('#s3 .fadeInUp').delay(1000).show();
 	});
 });
 $('#bgm i').click(function() {
