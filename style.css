@@ -91,8 +91,8 @@ article {
 	opacity:0;
 	top:50px;
 	animation: slideInUp 2s ease-in-out .5s both;
-	-webkit-animation: slideInUp 1s ease-in-out 3s both;
-	-ms-animation: slideInUp 2s ease-in-out 3s both;
+	-webkit-animation: slideInUp 1s ease-in-out .5s both;
+	-ms-animation: slideInUp 2s ease-in-out .5s both;
 	will-change: transform;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
