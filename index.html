@@ -192,7 +192,8 @@ $('#s2 .fas').on('click', function() {
 });
 $('#s3 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
-	$('#s3').delay(1000).fadeOut(1000, function() {
+	$('#s3').delay(1000).fadeOut(1000);
+	$('#opacity').delay(1000).fadeOut(1000, function() {
 		$('#s4 .fadeInUp').delay(1000).show();
 	});
 });
