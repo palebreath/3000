@@ -98,7 +98,7 @@ article {
 	backface-visibility: hidden;
 }
 #s1, #s3		{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
-#s4, #s6, #s7	{ color:#fff; text-shadow:0 0 1px #000; }
+#s4, #s6, #s7	{ color:#fafafa; text-shadow:0 0 1px #000; }
 #s1 .fadeInUp {
 	animation-delay: 3s;
 	-webkit-animation-delay: 3s;
@@ -191,8 +191,8 @@ p {
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
 #s2::before { background-image:url(bg.jpg); }
-#s3::before { position:fixed; background-color:rgba(0,0,0,.8); z-index:-2 }
-#s7::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-3  }
+#s3::before { position:fixed; background-color:rgba(0,0,0,.8); z-index:-3 }
+#s7::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-4  }
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
 #s3	, #s5 img		{
@@ -201,8 +201,7 @@ p {
 	-ms-animation: fadeOut 1s ease-in-out .1s both reverse;
 }
 
-#s5			{ text-align:center }
-#s5 div		{ display:none }
+#s5 div		{ display:none; text-align:center }
 #s5	 img	{ cursor:pointer }
 
 @media (min-width: 1024px) {
