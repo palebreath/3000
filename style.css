@@ -196,9 +196,9 @@ p {
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
 #s3	, #s5 img		{
-	animation: FadeOut 1s ease-in-out .1s both reverse;
-	-webkit-animation: FadeOut 1s ease-in-out .1s both reverse;
-	-ms-animation: FadeOut 1s ease-in-out .1s both reverse;
+	animation: fadeOut 1s ease-in-out .1s both reverse;
+	-webkit-animation: fadeOut 1s ease-in-out .1s both reverse;
+	-ms-animation: fadeOut 1s ease-in-out .1s both reverse;
 }
 
 #s5			{ text-align:center }
