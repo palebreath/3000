@@ -122,7 +122,7 @@ p {
 
 #s1::before		{ background-color:rgba(0,0,0,.5); z-index:0 }
 #bg1::before		{ position:fixed; background-image:url(bg.jpg); }
-#s1, #title h1, #s3 {
+.middle {
 	display:table-cell;
 	width:100vw;
 	height: 100vh;
@@ -198,6 +198,9 @@ p {
 	-webkit-animation: FadeOut 1s ease-in-out .1s both reverse;
 	-ms-animation: FadeOut 1s ease-in-out .1s both reverse;
 }
+
+#s6	 img	{ cursor:pointer }
+
 @media (min-width: 1024px) {
 }
 	
