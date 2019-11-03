@@ -122,7 +122,7 @@ p {
 
 #s1::before		{ background-color:rgba(0,0,0,.5); z-index:0 }
 #bg1::before		{ position:fixed; background-image:url(bg.jpg); }
-#s1, #title h1 {
+#s1, #title h1, #s3 {
 	display:table-cell;
 	width:100vw;
 	height: 100vh;
@@ -190,7 +190,7 @@ p {
 
 #s2::before { background-image:url(bg.jpg); }
 #s3::before { position:fixed; background-color:rgba(0,0,0,.8); z-index:-2 }
-#s4::before { background-color:rgba(0,0,0,.5); z-index:-3  }
+#s4::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-3  }
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
 #s3			{
