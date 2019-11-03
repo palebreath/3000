@@ -98,7 +98,7 @@ article {
 	backface-visibility: hidden;
 }
 #s1, #s3		{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
-#s4, #s6, #s7	{ color:#fafafa; text-shadow:0 0 1px #000; }
+#s4, #s6, #s7, #ep	{ color:#fafafa; text-shadow:0 0 1px #000; }
 #s1 .fadeInUp {
 	animation-delay: 3s;
 	-webkit-animation-delay: 3s;
