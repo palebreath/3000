@@ -190,19 +190,20 @@ p {
 #title h1 span:nth-child(9) {animation-delay:0.7s}
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
-#s2::before { background-image:url(bg.jpg); }
-#s3::before { position:fixed; background-color:rgba(0,0,0,.8); z-index:-3 }
-#s7::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-4  }
-#ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
 #s3	, #s5 img		{
 	animation: fadeOut 1s ease-in-out .1s both reverse;
 	-webkit-animation: fadeOut 1s ease-in-out .1s both reverse;
 	-ms-animation: fadeOut 1s ease-in-out .1s both reverse;
 }
+#s2::before { background-image:url(bg.jpg); }
+#s3::before { position:fixed; background-color:rgba(0,0,0,.8); z-index:-3 }
+#s7::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-4  }
+#ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
 #s5 div		{ display:none; text-align:center }
 #s5	 img	{ cursor:pointer }
+#ep article		{ max-width:1000px }
 
 @media (min-width: 1024px) {
 }
