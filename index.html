@@ -16,14 +16,14 @@
 </head>
 <body>
 <div id="wrap">
-	<section id="s1">
+	<section id="s1" class="middle">
 		<article class="fadeInUp">
 			<p>　시간은 사람을 무디게 한다. 재겸은 자신이 무뎌졌다는 사실이 기꺼웠다. 더는 어렸을 적처럼 도피하고 싶지 않았다. 성인이 된 즉시 싫은 것과 거리를 둘 수 있게 되기도 했고, 지금은 그때처럼 삶에 염증을 느끼는 것도 아니었으니. 부정적인 상황에 무뎌지는 것보다는 그렇지 않은 상황에 무뎌지는 게 낫다, 잘 지내고 있다는 반증이므로. 그러니 이 사실을 잊지 말아야 한다고……</p>
 			<i class="fas fa-long-arrow-alt-right"></i>
 		</article>
 	</section>
 	<section id="title">
-		<h1><i><span>바</span><span>다</span><span>가</span><span> </span><span>보</span><span>이</span><span>는</span><span> </span><span>곳</span><span>에</span></i></h1>
+		<h1 class="middle"><i><span>바</span><span>다</span><span>가</span><span> </span><span>보</span><span>이</span><span>는</span><span> </span><span>곳</span><span>에</span></i></h1>
 	</section>
 	<section id="s2">
 		<article class="fadeInUp">
@@ -40,7 +40,7 @@
 		</article>
 	</section>
 	<section id="bg1"></section>
-	<section id="s3">
+	<section id="s3" class="middle">
 		<article class="fadeInUp">
 			<p>　그리고 재겸은, 이 장면을 한국에 돌아와서도 종종 되새긴다. 이럴 시기는 애저녁에 지났다고 생각하면서도 이전과는 달리 길게 늘어지는 시간 사이사이에 하늘에 드리우는 노을처럼 서서히 스며드는 데에는 달리 어쩔 도리가 없다. 어떤 때에는 사람을 앞에 두고도 상념에 빠져 핀잔을 듣기도 한다. <i>나 네 생각 하고 있었는데. 날 앞에 두고? 집중 좀 하지. 정말이야.</i> 그러고 나면 대화의 흐름을 놓친 건 재겸 본인이면서도 빈말로 치부당하니 억울해지는 것이다. 그래서 그는,</p>
 			<p>　<i>유야. 응. 주말에 바다 보러 가자.</i></p>
@@ -115,6 +115,13 @@
 		</article>
 	</section>
 	<section id="s5">
+		<img src="bg_jku.png">
+	</section>
+	<section id="s6">
+		<article class="fadeInUp">
+			<p>다음부턴 저도 윅스를 쓰겟어요 ㅋ 아님 걍 텍스트만 올리거나... 연출에 재능도 없는데 글쓸시간 다뺏김</p>
+			<p>흑흑 쓰면서 자꾸 유를 유야라고 적어서 몇 번이나 고쳤는지 모르겟어요 ㅋㅋ 애들 설정을 오직 제 기억에만 의존해서... 뭔가 다른 게 있다면 말씀해 주세요 갠적으로는 제가 재겸이 전공에 대해 잘 몰라서... (해양환경뭐시기과) 석사까지 딴 재겸이를 알지 못 하는 게 너무 아쉬워요 ㅠㅠㅋ 아무튼 저는 정말이지 너무 자격 미달인 앤오네요... 항상 죄송하구 감사해요 벌써 3000일이에요 제 인생의 1/3을 유야와 함께할 수 있었어서 기뻐요 앞으로도 잘 부탁드릴게요 사랑합니다 S2</p>
+		</article>
 	</section>
 	<section id="ep">
 		<article class="fadeInUp">
@@ -159,6 +166,7 @@ $('#title h1 i').on('click', function () {
 $('#s2 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s2').delay(1000).fadeOut(1000, function() {
+		$('#s3').addClass('middle');
 		$('#s3 .fadeInUp').delay(1000).show();
 	});
 });
@@ -172,6 +180,20 @@ $('#s4 .fas').on('click', function() {
 	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
 	$('#s4').delay(1000).fadeOut(1000, function() {
 		$('#s5 .fadeInUp').delay(1000).show();
+	});
+});
+$('#s5 img').on('click', function() {
+	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
+	$('#s5').delay(1000).fadeOut(1000, function() {
+		$('#s6').addClass('middle');
+		$('#s6 .fadeInUp').delay(1000).show();
+	});
+});
+$('#s6 .fas').on('click', function() {
+	$(this).parents('.fadeInUp').toggleClass('fadeInUp fadeOut');
+	$('#s6').delay(1000).fadeOut(1000, function() {
+		$('#ep').addClass('middle');
+		$('#ep .fadeInUp').delay(1000).show();
 	});
 });
 $('#bgm i').click(function() {
