@@ -97,7 +97,8 @@ article {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-#s1, #s3, #s4, #s5	{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
+#s1, #s3		{ color:rgba(255,255,255,.9); text-shadow:0 0 1px #000; }
+#s4, #s6, #s7	{ color:#fff; text-shadow:0 0 1px #000; }
 #s1 .fadeInUp {
 	animation-delay: 3s;
 	-webkit-animation-delay: 3s;
@@ -122,6 +123,7 @@ p {
 
 #s1::before		{ background-color:rgba(0,0,0,.5); z-index:0 }
 #bg1::before		{ position:fixed; background-image:url(bg.jpg); }
+
 .middle {
 	display:table-cell;
 	width:100vw;
@@ -190,16 +192,18 @@ p {
 
 #s2::before { background-image:url(bg.jpg); }
 #s3::before { position:fixed; background-color:rgba(0,0,0,.8); z-index:-2 }
-#s4::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-3  }
+#s7::before { position:fixed; background-color:rgba(0,0,0,.5); z-index:-3  }
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
-#s3			{
+#s3	, #s5 img		{
 	animation: FadeOut 1s ease-in-out .1s both reverse;
 	-webkit-animation: FadeOut 1s ease-in-out .1s both reverse;
 	-ms-animation: FadeOut 1s ease-in-out .1s both reverse;
 }
 
-#s6	 img	{ cursor:pointer }
+#s5			{ text-align:center }
+#s5 div		{ display:none }
+#s5	 img	{ cursor:pointer }
 
 @media (min-width: 1024px) {
 }
