@@ -84,8 +84,7 @@ article {
 	display:none;
 	position:relative;
 	max-width:700px;
-	margin:0 auto;
-	padding:10em 2em 12em;
+	margin:10vh auto 12vh auto;
 }
 .fadeInUp {
 	opacity:0;
