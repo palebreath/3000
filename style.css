@@ -192,7 +192,7 @@ p {
 #title h1 span:nth-child(10) {animation-delay:0.8s}
 
 
-#s3	, #s5 img		{
+#s3, #s5 img		{
 	animation: fadeOut 1s ease-in-out .1s both reverse;
 	-webkit-animation: fadeOut 1s ease-in-out .1s both reverse;
 	-ms-animation: fadeOut 1s ease-in-out .1s both reverse;
@@ -202,8 +202,10 @@ p {
 #ep::before { position:fixed; background-image:url(bg2.jpg); z-index:-5; }
 
 #s5 div		{ display:none; text-align:center }
-#s5	 img	{ cursor:pointer }
+#s5	 img	{ max-width:100%; cursor:pointer }
+#ep img		{ max-width:100% }
 #ep article		{ max-width:1000px }
+#ep article p		{ max-width:700px }
 
 @media (min-width: 1024px) {
 }
