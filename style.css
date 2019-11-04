@@ -205,7 +205,6 @@ p {
 #s5	 img	{ max-width:100%; cursor:pointer }
 #ep img		{ max-width:100% }
 #ep article		{ max-width:1000px }
-#ep article p		{ max-width:700px }
 
 @media (min-width: 1024px) {
 }
